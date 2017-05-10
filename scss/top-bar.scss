@@ -1,0 +1,66 @@
+
+/*top bar*/
+		
+		.features-tb {
+			width: 100%
+		}
+		
+		.features-tb ul li {
+			display: inline-block;
+    		margin-left: 4px;
+			margin-top: 5px;
+		}
+		
+		.features-tb ul {
+			text-align: right;
+    		margin-right: 8px;
+			// width: 964px;
+			margin: 0 auto;
+		}
+		
+		.fs-36 {
+			background: url(http://www.moltonbrown.co.uk/MBPromoImages/Microsites/Features/features-sprite-72.png) no-repeat 0 0;
+			background-size: 36px;
+			display: inline-block;
+			font-size: 0;
+			height: 36px;
+			vertical-align: middle;
+			width: 36px;
+			background-position: 0 -46px;
+			float: right;
+}
+
+		
+		.features-link {
+			float: left;
+			display: block;
+			margin-top: 16px;
+			margin-left: 44px;
+			font-size: 15px;
+			color: #000;
+			text-decoration: none;
+		}
+		
+		.features-link:before {
+			border-top: 5px solid transparent;
+			border-right: 5px solid;
+			border-bottom: 5px solid transparent;
+			content: "";
+			display: inline-block;
+			height: 0;
+			margin-right: 7px;
+			vertical-align: middle;
+			visibility: visible;
+			width: 0;
+}
+
+#gift-concierge i, #gift-concierge em {
+   			 font-family: Georgia, 'Times New Roman', Times, serif !important;
+}
+
+@media only screen and (min-width: 0px) and (max-width : 767px) {
+
+	.features-tb ul {
+		width: 100%!important;
+		}
+}

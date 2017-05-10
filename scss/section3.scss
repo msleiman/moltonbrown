@@ -1,0 +1,64 @@
+.section3 {
+		position: relative;
+		background: url("images/04_Cape-York.jpg") 50% 50% no-repeat;
+		background-size: cover;
+	    // background-attachment: fixed;
+	    background-position: center center; 
+	    min-height: 846px;
+
+	    h2 {
+				font-size: 33px;
+				color: #fff;
+				font-family: 'Trebuchet', Trebuchet MS!important;
+				text-align: center;
+				padding-top: 35px;
+				margin: 0 auto;
+			}
+
+		h3 {
+				font-size: 18px;
+				text-align: center;
+				color: #fff;
+				font-weight: normal;
+			    padding-top: 6px;
+			}
+
+
+	    .innerContent {
+	    	background-color: #061924;
+	    	height: 500px;
+	    	width: 90%;
+	    	margin: 150px auto;
+	    	padding-top: 20px;
+	        max-width: 780px;
+            padding: 66px;
+
+	        .left {
+				float: left;
+				width: 50%;
+	        }
+
+	        .right {
+				float: right;
+				width: 50%;
+	        }
+
+	        p {
+		    font-size: 19px;
+		    width: 85%;
+		    color: #fff;
+		    font-style: italic;
+		    font-weight: normal;
+		    font-family: Georgia;
+		    line-height: 28px;
+	        }
+	        p:last-child {
+	        	padding-top: 25px;
+	        }
+
+	    }
+			
+
+
+
+} //section3

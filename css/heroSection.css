@@ -1,0 +1,43 @@
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  display: block;
+}
+
+.hero .innerContent {
+  margin: 0 auto;
+}
+
+.hero .innerContent h2 {
+  font-size: 33px;
+  color: #fff;
+  font-family: "Trebuchet", Trebuchet MS !important;
+  text-align: center;
+  padding-top: 35px;
+  margin: 0 auto;
+}
+
+.hero .innerContent h3 {
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  font-weight: normal;
+  padding-top: 6px;
+}
+
+.hero .innerContent h1 {
+  font-size: 60px;
+  padding-top: 115px;
+  text-align: center;
+  color: #fff;
+  font-family: "Trebuchet", Trebuchet MS !important;
+}
+
+.hero .innerContent h1:after {
+  content: url("images/dive-in.png");
+  display: block;
+  padding-top: 94px;
+}

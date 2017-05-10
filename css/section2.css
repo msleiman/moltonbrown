@@ -1,0 +1,81 @@
+.section2 {
+  position: relative;
+  background: url("images/03_The-Ingredients.jpg") 50% 50% no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 846px;
+}
+
+.section2 h2 {
+  font-size: 33px;
+  color: #fff;
+  font-family: "Trebuchet", Trebuchet MS !important;
+  text-align: center;
+  padding-top: 35px;
+  margin: 0 auto;
+}
+
+.section2 h3 {
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  font-weight: normal;
+  padding-top: 6px;
+}
+
+.section2 .innerContent {
+  background-color: rgba(6, 22, 32, 0.9);
+  height: 450px;
+  width: 90%;
+  margin: 133px auto;
+  padding-top: 20px;
+  max-width: 780px;
+  padding: 66px;
+}
+
+.section2 .innerContent:before {
+  content: url("images/quote.png");
+  top: 36px;
+  left: 46px;
+  position: absolute;
+}
+
+.section2 .innerContent .left {
+  float: left;
+  width: 50%;
+}
+
+.section2 .innerContent .right {
+  float: left;
+  width: 50%;
+}
+
+.section2 .innerContent .right .section2-right-1, .section2 .innerContent .right .section2-right-2, .section2 .innerContent .right .section2-right-3 {
+  float: left;
+  padding: 8px;
+  width: 30%;
+}
+
+.section2 .innerContent .right .section2-right-1 p, .section2 .innerContent .right .section2-right-2 p, .section2 .innerContent .right .section2-right-3 p {
+  font-size: 12px !important;
+  width: 100% !important;
+  text-align: center;
+  line-height: 16px;
+  padding-top: 14px;
+}
+
+.section2 .innerContent p {
+  font-size: 19px;
+  width: 85%;
+  color: #fff;
+  font-style: italic;
+  font-weight: normal;
+  font-family: Georgia;
+  line-height: 28px;
+}
+
+.section2 .innerContent p:last-child {
+  padding-top: 25px;
+  font-style: normal;
+  font-size: 14px;
+}
