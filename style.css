@@ -1,0 +1,193 @@
+body, img, h2, h3 {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-width: 100% !important;
+}
+
+.absolute-center {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.trebuchet {
+  font-family: "Trebuchet", Trebuchet MS !important;
+}
+
+.uncharted-wrap img {
+  width: 100%;
+  display: block;
+}
+
+.uncharted-wrap .hero {
+  position: relative;
+  background: url("images/01_Intro_Back-up-Still-Image.jpg") 50% 50% no-repeat;
+  background-size: cover;
+  min-height: 800px;
+}
+
+.uncharted-wrap .hero .innerContent {
+  margin: 0 auto;
+}
+
+.uncharted-wrap .hero .innerContent h2 {
+  font-size: 33px;
+  color: #fff;
+  font-family: "Trebuchet", Trebuchet MS !important;
+  text-align: center;
+  padding-top: 35px;
+  margin: 0 auto;
+}
+
+.uncharted-wrap .hero .innerContent h3 {
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  font-weight: normal;
+  padding-top: 6px;
+}
+
+.uncharted-wrap .hero .innerContent h1 {
+  font-size: 60px;
+  padding-top: 115px;
+  text-align: center;
+  color: #fff;
+  font-family: "Trebuchet", Trebuchet MS !important;
+}
+
+.uncharted-wrap .section2 {
+  position: relative;
+  background: url("images/03_The-Ingredients.jpg") 50% 50% no-repeat;
+  background-size: cover;
+  background-position: -500px;
+  min-height: 800px;
+}
+
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float: left;
+  margin: 0;
+}
+
+.col:first-child {
+  margin-left: 0;
+}
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+  /* For IE 6/7 */
+}
+
+/*  GRID OF TWELVE  */
+.span_12_of_12 {
+  width: 100%;
+}
+
+.span_11_of_12 {
+  width: 91.53%;
+}
+
+.span_10_of_12 {
+  width: 83.06%;
+}
+
+.span_9_of_12 {
+  width: 74.6%;
+}
+
+.span_8_of_12 {
+  width: 66.13%;
+}
+
+.span_7_of_12 {
+  width: 57.66%;
+}
+
+.span_6_of_12 {
+  width: 49.2%;
+}
+
+.span_5_of_12 {
+  width: 40.73%;
+}
+
+.span_4_of_12 {
+  width: 32.26%;
+}
+
+.span_3_of_12 {
+  width: 23.8%;
+}
+
+.span_2_of_12 {
+  width: 15.33%;
+}
+
+.span_1_of_12 {
+  width: 6.866%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 0;
+  }
+  .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 767px) {
+  .hero h2 {
+    width: 60%;
+  }
+  .section2 {
+    height: 1700px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .section2 {
+    height: 720px;
+  }
+  .hero h2 {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+  .section2 {
+    height: 940px;
+  }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1479px) {
+  .section2 {
+    height: 1180px;
+  }
+}
