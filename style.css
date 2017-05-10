@@ -1,11 +1,61 @@
 body, img, h2, h3 {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 body {
-  min-width: 100% !important;
-}
+  min-width: 100% !important; }
+
+.treb {
+  font-family: "Trebuchet", Trebuchet MS !important; }
+
+/*top bar*/
+.features-tb {
+  width: 100%; }
+
+.features-tb ul li {
+  display: inline-block;
+  margin-left: 4px;
+  margin-top: 5px; }
+
+.features-tb ul {
+  text-align: right;
+  margin-right: 8px;
+  margin: 0 auto; }
+
+.fs-36 {
+  background: url(http://www.moltonbrown.co.uk/MBPromoImages/Microsites/Features/features-sprite-72.png) no-repeat 0 0;
+  background-size: 36px;
+  display: inline-block;
+  font-size: 0;
+  height: 36px;
+  vertical-align: middle;
+  width: 36px;
+  background-position: 0 -46px;
+  float: right; }
+
+.features-link {
+  float: left;
+  display: block;
+  margin-top: 16px;
+  margin-left: 44px;
+  font-size: 15px;
+  color: #000;
+  text-decoration: none; }
+
+.features-link:before {
+  border-top: 5px solid transparent;
+  border-right: 5px solid;
+  border-bottom: 5px solid transparent;
+  content: "";
+  display: inline-block;
+  height: 0;
+  margin-right: 7px;
+  vertical-align: middle;
+  visibility: visible;
+  width: 0; }
+
+#gift-concierge i, #gift-concierge em {
+  font-family: Georgia, 'Times New Roman', Times, serif !important; }
 
 .absolute-center {
   margin: auto;
@@ -13,181 +63,272 @@ body {
   top: 0;
   left: 0;
   bottom: 0;
-  right: 0;
-}
+  right: 0; }
 
 .trebuchet {
-  font-family: "Trebuchet", Trebuchet MS !important;
-}
+  font-family: "Trebuchet", Trebuchet MS !important; }
 
-.uncharted-wrap img {
-  width: 100%;
-  display: block;
-}
+.georgia {
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
+  -webkit-font-smoothing: antialiased !important; }
 
 .uncharted-wrap .hero {
-  position: relative;
-  background: url("images/01_Intro_Back-up-Still-Image.jpg") 50% 50% no-repeat;
-  background-size: cover;
-  min-height: 800px;
-}
-
-.uncharted-wrap .hero .innerContent {
-  margin: 0 auto;
-}
-
-.uncharted-wrap .hero .innerContent h2 {
-  font-size: 33px;
-  color: #fff;
-  font-family: "Trebuchet", Trebuchet MS !important;
-  text-align: center;
-  padding-top: 35px;
-  margin: 0 auto;
-}
-
-.uncharted-wrap .hero .innerContent h3 {
-  font-size: 18px;
-  text-align: center;
-  color: #fff;
-  font-weight: normal;
-  padding-top: 6px;
-}
-
-.uncharted-wrap .hero .innerContent h1 {
-  font-size: 60px;
-  padding-top: 115px;
-  text-align: center;
-  color: #fff;
-  font-family: "Trebuchet", Trebuchet MS !important;
-}
+  position: relative; }
+  .uncharted-wrap .hero img {
+    width: 100%;
+    display: block; }
+  .uncharted-wrap .hero .innerContent {
+    margin: 0 auto; }
+    .uncharted-wrap .hero .innerContent h2 {
+      font-size: 33px;
+      color: #fff;
+      font-family: "Trebuchet", Trebuchet MS !important;
+      text-align: center;
+      padding-top: 35px;
+      margin: 0 auto; }
+    .uncharted-wrap .hero .innerContent h3 {
+      font-size: 18px;
+      text-align: center;
+      color: #fff;
+      font-weight: normal;
+      padding-top: 6px; }
+    .uncharted-wrap .hero .innerContent h1 {
+      font-size: 60px;
+      padding-top: 115px;
+      text-align: center;
+      color: #fff;
+      font-family: "Trebuchet", Trebuchet MS !important; }
+      .uncharted-wrap .hero .innerContent h1:after {
+        content: url("images/dive-in.png");
+        display: block;
+        padding-top: 94px; }
 
 .uncharted-wrap .section2 {
   position: relative;
   background: url("images/03_The-Ingredients.jpg") 50% 50% no-repeat;
   background-size: cover;
-  background-position: -500px;
-  min-height: 800px;
-}
+  background-position: center center;
+  min-height: 846px; }
+  .uncharted-wrap .section2 h2 {
+    font-size: 33px;
+    color: #fff;
+    font-family: "Trebuchet", Trebuchet MS !important;
+    text-align: center;
+    padding-top: 35px;
+    margin: 0 auto; }
+  .uncharted-wrap .section2 h3 {
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+    padding-top: 6px; }
+  .uncharted-wrap .section2 .innerContent {
+    background-color: rgba(6, 22, 32, 0.9);
+    height: 450px;
+    width: 90%;
+    margin: 133px auto;
+    padding-top: 20px;
+    max-width: 780px;
+    padding: 66px; }
+    .uncharted-wrap .section2 .innerContent:before {
+      content: url("images/quote.png");
+      top: 36px;
+      left: 46px;
+      position: absolute; }
+    .uncharted-wrap .section2 .innerContent .left {
+      float: left;
+      width: 50%; }
+    .uncharted-wrap .section2 .innerContent .right {
+      float: left;
+      width: 50%; }
+      .uncharted-wrap .section2 .innerContent .right .section2-right-1, .uncharted-wrap .section2 .innerContent .right .section2-right-2, .uncharted-wrap .section2 .innerContent .right .section2-right-3 {
+        float: left;
+        padding: 8px;
+        width: 30%; }
+        .uncharted-wrap .section2 .innerContent .right .section2-right-1 p, .uncharted-wrap .section2 .innerContent .right .section2-right-2 p, .uncharted-wrap .section2 .innerContent .right .section2-right-3 p {
+          font-size: 12px !important;
+          width: 100% !important;
+          text-align: center;
+          line-height: 16px;
+          padding-top: 14px; }
+    .uncharted-wrap .section2 .innerContent p {
+      font-size: 19px;
+      width: 85%;
+      color: #fff;
+      font-style: italic;
+      font-weight: normal;
+      font-family: Georgia;
+      line-height: 28px; }
+    .uncharted-wrap .section2 .innerContent p:last-child {
+      padding-top: 25px;
+      font-style: normal;
+      font-size: 14px; }
+
+.uncharted-wrap .section3 {
+  position: relative;
+  background: url("images/04_Cape-York.jpg") 50% 50% no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 846px; }
+  .uncharted-wrap .section3 h2 {
+    font-size: 33px;
+    color: #fff;
+    font-family: "Trebuchet", Trebuchet MS !important;
+    text-align: center;
+    padding-top: 35px;
+    margin: 0 auto; }
+  .uncharted-wrap .section3 h3 {
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+    padding-top: 6px; }
+  .uncharted-wrap .section3 .innerContent {
+    background-color: #061924;
+    height: 500px;
+    width: 90%;
+    margin: 150px auto;
+    padding-top: 20px;
+    max-width: 780px;
+    padding: 66px; }
+    .uncharted-wrap .section3 .innerContent .left {
+      float: left;
+      width: 50%; }
+    .uncharted-wrap .section3 .innerContent .right {
+      float: right;
+      width: 50%; }
+    .uncharted-wrap .section3 .innerContent p {
+      font-size: 19px;
+      width: 85%;
+      color: #fff;
+      font-style: italic;
+      font-weight: normal;
+      font-family: Georgia;
+      line-height: 28px; }
+    .uncharted-wrap .section3 .innerContent p:last-child {
+      padding-top: 25px; }
 
 /*  SECTIONS  */
 .section {
   clear: both;
   padding: 0px;
-  margin: 0px;
-}
+  margin: 0px; }
 
 /*  COLUMN SETUP  */
 .col {
   display: block;
   float: left;
-  margin: 0;
-}
+  margin: 0; }
 
 .col:first-child {
-  margin-left: 0;
-}
+  margin-left: 0; }
 
 /*  GROUPING  */
 .group:before,
 .group:after {
   content: "";
-  display: table;
-}
+  display: table; }
 
 .group:after {
-  clear: both;
-}
+  clear: both; }
 
 .group {
   zoom: 1;
-  /* For IE 6/7 */
-}
+  /* For IE 6/7 */ }
 
 /*  GRID OF TWELVE  */
 .span_12_of_12 {
-  width: 100%;
-}
+  width: 100%; }
 
 .span_11_of_12 {
-  width: 91.53%;
-}
+  width: 91.53%; }
 
 .span_10_of_12 {
-  width: 83.06%;
-}
+  width: 83.06%; }
 
 .span_9_of_12 {
-  width: 74.6%;
-}
+  width: 74.6%; }
 
 .span_8_of_12 {
-  width: 66.13%;
-}
+  width: 66.13%; }
 
 .span_7_of_12 {
-  width: 57.66%;
-}
+  width: 57.66%; }
 
 .span_6_of_12 {
-  width: 49.2%;
-}
+  width: 49.2%; }
 
 .span_5_of_12 {
-  width: 40.73%;
-}
+  width: 40.73%; }
 
 .span_4_of_12 {
-  width: 32.26%;
-}
+  width: 32.26%; }
 
 .span_3_of_12 {
-  width: 23.8%;
-}
+  width: 23.8%; }
 
 .span_2_of_12 {
-  width: 15.33%;
-}
+  width: 15.33%; }
 
 .span_1_of_12 {
-  width: 6.866%;
-}
+  width: 6.866%; }
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
   .col {
-    margin: 0;
-  }
+    margin: 0; }
   .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
-    width: 100%;
-  }
-}
+    width: 100%; } }
 
-@media only screen and (min-width: 100px) and (max-width: 767px) {
-  .hero h2 {
-    width: 60%;
-  }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .features-tb ul {
+    width: 100% !important; }
+  .hero {
+    background: url("images/mobile-intro.gif") 50% 50% no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    min-height: 846px; }
+    .hero h2 {
+      width: 60%; }
+    .hero img {
+      display: none; }
+    .hero h1 {
+      width: 77%;
+      margin: 0 auto; }
   .section2 {
-    height: 1700px;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .section2 {
-    height: 720px;
-  }
-  .hero h2 {
-    width: 60%;
-  }
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1279px) {
-  .section2 {
-    height: 940px;
-  }
-}
-
-@media only screen and (min-width: 1280px) and (max-width: 1479px) {
-  .section2 {
-    height: 1180px;
-  }
-}
+    height: 1008px;
+    background-position: -1400px !important; }
+    .section2 h2 {
+      font-size: 32px !important; }
+    .section2 h3 {
+      font-size: 18px !important;
+      margin-top: -5px !important; }
+    .section2 .innerContent {
+      padding: 0px !important;
+      height: 815px !important;
+      max-width: 320px !important; }
+      .section2 .innerContent:before {
+        top: 36px;
+        left: 46px; }
+      .section2 .innerContent p {
+        text-align: center;
+        font-size: 19px !important;
+        line-height: 30px !important;
+        margin: 0 auto;
+        line-height: 26px !important;
+        font-weight: lighter;
+        max-width: 250px !important;
+        padding-top: 45px; }
+      .section2 .innerContent p:nth-child(2) {
+        padding-bottom: 10px;
+        font-size: 14px !important;
+        width: 34% !important;
+        line-height: 18px !important; }
+      .section2 .innerContent .left, .section2 .innerContent .right {
+        width: 100% !important; }
+      .section2 .innerContent .right p {
+        font-size: 12px !important;
+        line-height: 14px !important; }
+      .section2 .innerContent .section2-right-wrap {
+        margin: 0 auto !important;
+        width: 95%; } }

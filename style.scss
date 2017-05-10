@@ -9,6 +9,67 @@ body {
 	min-width: 100%!important;
 }
 
+.treb {
+	font-family: 'Trebuchet', Trebuchet MS!important;
+}
+/*top bar*/
+		
+		.features-tb {
+			width: 100%
+		}
+		
+		.features-tb ul li {
+			display: inline-block;
+    		margin-left: 4px;
+			margin-top: 5px;
+		}
+		
+		.features-tb ul {
+			text-align: right;
+    		margin-right: 8px;
+			// width: 964px;
+			margin: 0 auto;
+		}
+		
+		.fs-36 {
+			background: url(http://www.moltonbrown.co.uk/MBPromoImages/Microsites/Features/features-sprite-72.png) no-repeat 0 0;
+			background-size: 36px;
+			display: inline-block;
+			font-size: 0;
+			height: 36px;
+			vertical-align: middle;
+			width: 36px;
+			background-position: 0 -46px;
+			float: right;
+}
+
+		
+		.features-link {
+			float: left;
+			display: block;
+			margin-top: 16px;
+			margin-left: 44px;
+			font-size: 15px;
+			color: #000;
+			text-decoration: none;
+		}
+		
+		.features-link:before {
+			border-top: 5px solid transparent;
+			border-right: 5px solid;
+			border-bottom: 5px solid transparent;
+			content: "";
+			display: inline-block;
+			height: 0;
+			margin-right: 7px;
+			vertical-align: middle;
+			visibility: visible;
+			width: 0;
+}
+		
+		#gift-concierge i, #gift-concierge em {
+   			 font-family: Georgia, 'Times New Roman', Times, serif !important;
+}
 // global styles
 .absolute-center {
 	margin: auto;
@@ -20,20 +81,26 @@ body {
 	font-family: 'Trebuchet', Trebuchet MS!important;
 }
 
+.georgia {
+	font-family: Georgia, 'Times New Roman', Times, serif !important;
+	 -webkit-font-smoothing: antialiased !important;
+}
+
 .uncharted-wrap {
-	img {
+	
+
+.hero {
+		position: relative;
+    	// background-attachment: fixed; 
+    	img {
 		width: 100%;
 		display: block;
 	}
 
-	.hero {
-		position: relative;
-		background: url("images/01_Intro_Back-up-Still-Image.jpg") 50% 50% no-repeat;
-		background-size: cover;
-    	// background-attachment: fixed; 
-    	min-height: 800px;
-		.innerContent {
+
+.innerContent {
 			margin: 0 auto;
+
 			h2 {
 				font-size: 33px;
 				color: #fff;
@@ -42,6 +109,8 @@ body {
 				padding-top: 35px;
 				margin: 0 auto;
 			}
+
+			
 			h3 {
 				font-size: 18px;
 				text-align: center;
@@ -49,26 +118,179 @@ body {
 				font-weight: normal;
 			    padding-top: 6px;
 			}
+
 			h1 {
 				font-size: 60px;
 				padding-top: 115px;
 				text-align: center;
 				color: #fff;
 				font-family: 'Trebuchet', Trebuchet MS!important;
+					&:after {
+					content: url('images/dive-in.png');
+					display: block;
+	    			padding-top: 94px;
+			}
+
 			}
 		}
 	} 
 	// hero
 
-	.section2 {
-	position: relative;
-	background: url("images/03_The-Ingredients.jpg") 50% 50% no-repeat;
-	background-size: cover;
-    // background-attachment: fixed;
-    background-position: -500px; 
-    min-height: 800px;
+.section2 {
+		position: relative;
+		background: url("images/03_The-Ingredients.jpg") 50% 50% no-repeat;
+		background-size: cover;
+	    // background-attachment: fixed;
+	    background-position: center center; 
+	    min-height: 846px;
+
+
+	    h2 {
+				font-size: 33px;
+				color: #fff;
+				font-family: 'Trebuchet', Trebuchet MS!important;
+				text-align: center;
+				padding-top: 35px;
+				margin: 0 auto;
+			}
+
+		h3 {
+				font-size: 18px;
+				text-align: center;
+				color: #fff;
+				font-weight: normal;
+			    padding-top: 6px;
+			}
+
+
+	    .innerContent {
+    	    background-color: rgba(6, 22, 32, 0.9);
+	    	height: 450px;
+	    	width: 90%;
+	    	margin: 133px auto;
+	    	padding-top: 20px;
+	        max-width: 780px;
+            padding: 66px;
+            	    &:before {
+	    	content: url('images/quote.png');
+    	    top: 36px;
+			left: 46px;
+    		position: absolute;
+	    }
+
+	        .left {
+				float: left;
+				width: 50%;
+	        }
+
+	        .right {
+				float: left;
+				width: 50%;
+
+				.section2-right-1, .section2-right-2, .section2-right-3 {
+					float: left;
+					padding: 8px;
+					width: 30%;
+
+					p {
+						font-size: 12px!important;
+						width: 100%!important;
+						text-align: center;
+						line-height: 16px;
+						padding-top: 14px;
+
+					}
+
+				}
+	        }
+
+	        p {
+		    font-size: 19px;
+		    width: 85%;
+		    color: #fff;
+		    font-style: italic;
+		    font-weight: normal;
+		    font-family: Georgia;
+		    line-height: 28px;
+	        }
+	        p:last-child {
+	        	padding-top: 25px;
+	        	font-style: normal;
+    			font-size: 14px;
+	        }
+
+	    }
+			
+
+
 
 } //section2
+
+
+.section3 {
+		position: relative;
+		background: url("images/04_Cape-York.jpg") 50% 50% no-repeat;
+		background-size: cover;
+	    // background-attachment: fixed;
+	    background-position: center center; 
+	    min-height: 846px;
+
+	    h2 {
+				font-size: 33px;
+				color: #fff;
+				font-family: 'Trebuchet', Trebuchet MS!important;
+				text-align: center;
+				padding-top: 35px;
+				margin: 0 auto;
+			}
+
+		h3 {
+				font-size: 18px;
+				text-align: center;
+				color: #fff;
+				font-weight: normal;
+			    padding-top: 6px;
+			}
+
+
+	    .innerContent {
+	    	background-color: #061924;
+	    	height: 500px;
+	    	width: 90%;
+	    	margin: 150px auto;
+	    	padding-top: 20px;
+	        max-width: 780px;
+            padding: 66px;
+
+	        .left {
+				float: left;
+				width: 50%;
+	        }
+
+	        .right {
+				float: right;
+				width: 50%;
+	        }
+
+	        p {
+		    font-size: 19px;
+		    width: 85%;
+		    color: #fff;
+		    font-style: italic;
+		    font-weight: normal;
+		    font-family: Georgia;
+		    line-height: 28px;
+	        }
+	        p:last-child {
+	        	padding-top: 25px;
+	        }
+
+	    }
+			
+
+
+
+} //section3
 
 
 }
@@ -154,37 +376,111 @@ body {
 
 }
 
-@media only screen and (min-width: 100px) and (max-width : 767px) {
+@media only screen and (min-width: 0px) and (max-width : 767px) {
+
+	.features-tb ul {
+		width: 100%!important;
+		}
 	.hero {
+		background: url("images/mobile-intro.gif") 50% 50% no-repeat;
+		background-size: cover;
+    	// background-attachment: fixed;
+    	background-position: 100% 100%; 
+    	min-height: 846px;
+
 		h2 {
 			width: 60%;
 		}
+		img {
+			display: none;
+		}
+		h1 {
+			width: 77%;
+			margin: 0 auto;
+		}
+
 	}
 
 	.section2 {
-		height: 1700px;
-	}
+			height: 1008px;
+			background-position: -1400px!important; 
+
+				h2 {
+					font-size: 32px!important;
+				}
+				h3 {
+					font-size: 18px !important;
+					margin-top: -5px!important;
+				}
+			.innerContent {
+
+				padding: 0px!important;
+				height: 815px!important;
+				max-width: 320px!important;
+				&:before {
+					    top: 36px;
+    					left: 46px;
+				}
+				    
+				p {
+					text-align: center;
+					font-size: 19px!important;
+				    line-height: 30px!important;
+				    margin: 0 auto;
+			        line-height: 26px!important;
+			        font-weight: lighter;
+			        max-width: 250px!important;
+		            padding-top: 45px;
+				}
+				p:nth-child(2) {
+					// padding-top: 20px;
+					padding-bottom: 10px;
+					font-size: 14px!important;
+					width: 34%!important;
+    				line-height: 18px!important;
+				}
+				.left, .right {
+					width: 100%!important;
+				}
+
+				.right p {
+					font-size: 12px!important;
+					line-height: 14px!important;
+				}
+
+				.section2-right-wrap {
+						margin: 0 auto!important;
+						width: 95%;
+					}
+
+
+
+
+
+
+			}
+		}
+
+
+
+
 }
 
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
+ 
  .section2 {
-    height: 720px;
+    // height: 720px;
   }
-  	.hero {
-		h2 {
-			width: 60%;
-		}
-	}
 }
 
 @media only screen and (min-width : 1024px) and (max-width : 1279px) {
  .section2 {
-    height: 940px;
+    // height: 940px;
   }
 }
 
 @media only screen and (min-width : 1280px) and (max-width : 1479px) {
  .section2 {
-    height: 1180px;
+    // height: 1180px;
   }
 }
