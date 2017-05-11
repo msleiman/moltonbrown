@@ -1,0 +1,125 @@
+.section5 {
+		position: relative;
+		background: url("images/06_Alastairs-Adventure.jpg") 50% 50% no-repeat;
+		background-size: cover;
+	    // background-attachment: fixed;
+	    background-position: center center; 
+	    height: 844px;
+
+	    h2 {
+	    	font-size: 25px;
+	    	color: #fff;
+	    	text-align: center;
+	    	font-family: 'Trebuchet', Trebuchet MS!important;
+	    	padding-top: 50px;
+	    }
+	    h3 {
+	    	font-size: 48px;
+	    	color: #fff;
+	    	text-align: center;
+
+	    }
+
+	    .s4wrap {
+	    	width: 750px;
+	    	margin: 0 auto;
+	    	position: relative;
+	    		    			.innerContent {
+							background-color: rgba(6, 22, 32, 0.9);
+						    min-height: 334px;
+						    margin: 40px auto;
+						    max-width: 474px;
+						    padding: 66px 56px 30px 70px;
+						    position: absolute;
+						    right: -56px;
+
+
+		    	    
+
+						p {
+							font-size: 21px;
+							color: #fff;
+							-webkit-font-smoothing: antialiased !important;
+							font-style: italic;
+							font-family: Georgia;
+							line-height: 25px;
+
+
+							&:before {
+			    	    	background: url("images/quote.png") 100% no-repeat;
+							content: url('');
+					    	top: 3px;
+							left: 30px;
+							width: 100px;
+							height: 100px;
+							position: absolute;
+							display: inline-block;
+						}
+
+							&:last-child{
+								font-size: 14px;
+								font-family: 'Trebuchet', Trebuchet MS!important;
+								font-style: normal;
+								font-size: 14px;
+								padding-top: 30px;
+								line-height: 16px;
+								span {
+									font-weight: bold;
+
+								}
+								span.underline {
+									text-decoration: underline;
+								}
+							}
+						}
+				}// innercontent
+
+				.section4Video {
+					padding-top: 235px;
+
+				}
+	    }
+
+
+}
+
+@media only screen and (min-width: 0px) and (max-width : 767px) {
+	.section5 {
+			    height: 844px;
+		.s4wrap {
+			width: 285px;
+	    	margin: 0 auto;
+
+	    	   .innerContent {
+					width:285px;
+					left: 0;
+					display: block;
+					text-align: center;
+					padding: 42px;
+					p {
+						font-size: 20px;
+					}
+
+					p:last-child {
+						padding-top: 10px;
+					}
+
+
+								    
+			    }
+
+    				.section4Video {
+    					img {
+    						width: 100%;
+    						padding-top: 505px;
+    					}
+					    
+					    padding-top: 0;
+					 
+
+				}
+			}
+
+
+	}
+}

@@ -1,0 +1,77 @@
+.section5 {
+  position: relative;
+  background: url("images/05_Carlas-Creation.jpg") 50% 50% no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 844px; }
+  .section5 h2 {
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+    font-family: "Trebuchet", Trebuchet MS !important;
+    padding-top: 50px; }
+  .section5 h3 {
+    font-size: 48px;
+    color: #fff;
+    text-align: center; }
+  .section5 .s4wrap {
+    width: 750px;
+    margin: 0 auto;
+    position: relative; }
+    .section5 .s4wrap .innerContent {
+      background-color: rgba(6, 22, 32, 0.9);
+      min-height: 360px;
+      margin: 20px auto;
+      max-width: 438px;
+      padding: 57px;
+      position: absolute;
+      left: -56px; }
+      .section5 .s4wrap .innerContent p {
+        font-size: 20px;
+        color: #fff;
+        -webkit-font-smoothing: antialiased !important;
+        font-style: italic;
+        font-family: Georgia;
+        line-height: 25px; }
+        .section5 .s4wrap .innerContent p:before {
+          background: url("images/quote.png") 100% no-repeat;
+          content: url("");
+          top: 3px;
+          left: 30px;
+          width: 100px;
+          height: 100px;
+          position: absolute;
+          display: inline-block; }
+        .section5 .s4wrap .innerContent p:last-child {
+          font-size: 14px;
+          font-family: "Trebuchet", Trebuchet MS !important;
+          font-style: normal;
+          font-size: 14px;
+          padding-top: 30px;
+          line-height: 16px; }
+          .section5 .s4wrap .innerContent p:last-child span {
+            font-weight: bold; }
+    .section5 .s4wrap .section4Video {
+      padding-top: 235px; }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .section4 {
+    height: 844px; }
+    .section4 .s4wrap {
+      width: 285px;
+      margin: 0 auto; }
+      .section4 .s4wrap .innerContent {
+        width: 285px;
+        left: 0;
+        display: block;
+        text-align: center;
+        padding: 42px; }
+        .section4 .s4wrap .innerContent p {
+          font-size: 20px; }
+        .section4 .s4wrap .innerContent p:last-child {
+          padding-top: 10px; }
+      .section4 .s4wrap .section4Video {
+        padding-top: 0; }
+        .section4 .s4wrap .section4Video img {
+          width: 100%;
+          padding-top: 505px; } }

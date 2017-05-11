@@ -1,0 +1,66 @@
+.section7 {
+		position: relative;
+		background: url("images/08_Your-Adventure.jpg") 50% 50% no-repeat;
+		background-size: cover;
+	    // background-attachment: fixed;
+	    background-position: center center; 
+	    height: 844px;
+
+	   	h2 {
+	    	font-size: 25px;
+	    	color: #fff;
+	    	text-align: center;
+	    	font-family: 'Trebuchet', Trebuchet MS!important;
+	    	padding-top: 50px;
+	    }
+	    h3 {
+	    	font-size: 48px;
+	    	color: #fff;
+	    	text-align: center;
+	    	padding-bottom: 20px;
+
+	    }
+
+	    .s7wrap {
+	    	width: 883px;
+	    	margin: 0 auto;
+	    	position: relative;
+	    	height: 695px;
+
+	    	.innerContent {
+	    		max-width: 500px;
+				background-color: rgba(6, 22, 32, 0.9);
+			    max-width: 474px;
+			    padding: 66px 56px 30px 70px;
+			    position: absolute;
+			    height: 600px;
+
+			    p {
+			    	font-size: 14px;
+			    	color: #fff;
+			    }
+
+			    li {
+					font-size: 14px;
+			    	color: #fff;
+
+			    }
+
+	    	}
+
+			.carousel {
+				position: relative;
+				.carousel-slide1 {position: absolute; width: 300px; right:0px; width: 350px; right: 20px; top: 312px;}
+				.carousel-slide2 {position: absolute; width: 300px; left: 513px; top: 103px;}
+				.carousel-slide3 {position: absolute; width: 240px; left:250px; top:460px}
+				.carousel-slide4 {position: absolute; width: 170px; left: 319px; top: 336px;}
+				.carousel-slide5 {    position: absolute;
+    top: 557px;
+    right: 200px;
+    width: 170px;}
+
+			}
+	    }
+
+
+}
