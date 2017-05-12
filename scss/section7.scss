@@ -31,18 +31,94 @@
 	    		max-width: 500px;
 				background-color: rgba(6, 22, 32, 0.9);
 			    max-width: 474px;
-			    padding: 66px 56px 30px 70px;
+			    padding: 20px;
 			    position: absolute;
-			    height: 600px;
+			    height: 735px;
 
 			    p {
 			    	font-size: 14px;
 			    	color: #fff;
+			    	line-height: 16px;
+			    	padding-bottom: 24px;
+			    	-webkit-font-smoothing: antialiased !important;
 			    }
+
+			    p:nth-child(1) {
+			    	text-align: center;
+			    	font-size: 14px;
+			    	font-family: 'Trebuchet', Trebuchet MS!important;
+			    	margin-top: 20px;
+			    }
+
+			    p:nth-child(2) {
+			    	text-align: center;
+			    	font-size: 14px;
+			    	font-family: 'Trebuchet', Trebuchet MS!important;
+			    }
+
+
 
 			    li {
 					font-size: 14px;
 			    	color: #fff;
+			    	padding-bottom: 29px;
+			    	-webkit-font-smoothing: antialiased !important;
+			    	position: relative;
+					margin-left: 50px;
+					line-height: 21px;
+
+			    	&:nth-child(1) {
+
+					width: 86%;
+			    		&:before {
+			    			content: "1.";
+			    			position: absolute;
+			    			font-size: 48px;
+			    			font-family: Georgia;
+			    			font-style: italic;
+			    			left: -45px;
+			    			bottom: 40px;
+			    		}
+			    	}//nth-child 1
+
+			    	&:nth-child(2) {
+					width: 81%;
+			    		&:before {
+			    			content: "2.";
+			    			position: absolute;
+			    			font-size: 48px;
+			    			font-family: Georgia;
+			    			font-style: italic;
+			    			left: -50px;
+			    			bottom: 38px;
+			    		}
+			    	}//nth-child 2
+
+			    	&:nth-child(3) {
+					width: 56%;
+			    		&:before {
+			    			content: "3.";
+			    			position: absolute;
+			    			font-size: 48px;
+			    			font-family: Georgia;
+			    			font-style: italic;
+			    			left: -50px;
+			    			bottom: 39px;
+			    		}
+			    	}//nth-child 3
+
+			    	&:nth-child(4) {
+					width: 42%;
+			    		&:before {
+			    			content: "4.";
+			    			position: absolute;
+			    			font-size: 48px;
+			    			font-family: Georgia;
+			    			font-style: italic;
+			    			left: -50px;
+			    			bottom: 39px;
+			    		}
+			    	}//nth-child 4
 
 			    }
 
@@ -50,17 +126,73 @@
 
 			.carousel {
 				position: relative;
-				.carousel-slide1 {position: absolute; width: 300px; right:0px; width: 350px; right: 20px; top: 312px;}
-				.carousel-slide2 {position: absolute; width: 300px; left: 513px; top: 103px;}
-				.carousel-slide3 {position: absolute; width: 240px; left:250px; top:460px}
-				.carousel-slide4 {position: absolute; width: 170px; left: 319px; top: 336px;}
-				.carousel-slide5 {    position: absolute;
-    top: 557px;
-    right: 200px;
-    width: 170px;}
+				.carousel-slide1 {position: absolute; width: 300px; right:0px; width: 350px; right: 13px; top: 312px;}
+				.carousel-slide2 {position: absolute; width: 300px; right: 63px; top: 103px;}
+				.carousel-slide3 {position: absolute; width: 240px; left:270px; top:460px}
+				.carousel-slide4 {position: absolute; width: 170px; left: 340px; top: 336px;}
+				.carousel-slide5 { position: absolute; top: 557px; right: 193px; width: 170px;}
 
 			}
 	    }
 
 
+}
+
+
+@media only screen and (min-width: 0px) and (max-width : 767px) { 
+	.section7 {
+		height: 1067px;
+		.s7wrap {
+			width: 320px;;
+			.innerContent {
+				height: 735px;
+
+							    li {
+					font-size: 14px;
+			    	color: #fff;
+			    	padding-bottom: 29px;
+			    	-webkit-font-smoothing: antialiased !important;
+			    	position: relative;
+					margin-left: 50px;
+
+			    	&:nth-child(1) {
+
+					width: 63%;
+			    		&:before {
+							bottom: 24px
+			    		}
+			    	}//nth-child 1
+
+			    	&:nth-child(2) {
+					width: 67%;
+
+								    		&:before {
+							bottom: 24px
+			    		}
+
+			    	}//nth-child 2
+
+			    	&:nth-child(3) {
+					width: 80%;
+			    		&:before {
+							bottom: 24px
+			    		}
+			    	}//nth-child 3
+
+			    	&:nth-child(4) {
+					width: 66%;
+			    		&:before {
+							bottom: 24px
+			    		}
+			    	}//nth-child 4
+
+			    }
+
+			}
+
+			.carousel {
+				display: none;
+			}
+		}
+	}
 }
