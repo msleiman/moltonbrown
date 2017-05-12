@@ -65,11 +65,10 @@
 
 @media only screen and (min-width: 0px) and (max-width : 767px) {
 	.section8 {
-		background: url("images/09_The-Collection_Mobile.jpg")50% no-repeat;
-		height: 575px;
-		background-position: left; 
-		max-width: 100%;
-	    background-size: 100%;
+		background: url("images/09_The-Collection_Mobile.jpg")50% 50% no-repeat;
+		height: 660px;
+		background-position: center center; 
+	    background-size: cover;
 
 		h2 {
 			padding-top: 50px;
@@ -86,6 +85,7 @@
 			p {
 				padding-top: 30px;
 				max-width: 230px;
+				color: #000;
 			}
 			}
 		}

@@ -4,7 +4,7 @@
 		background-size: cover;
 	    // background-attachment: fixed;
 	    background-position: center center; 
-	    height: 844px;
+	    height: 920px;
 
 	   	h2 {
 	    	font-size: 25px;
@@ -26,14 +26,14 @@
 	    	margin: 0 auto;
 	    	position: relative;
 	    	height: 695px;
+	    	padding-top: 16px;
 
 	    	.innerContent {
 	    		max-width: 500px;
 				background-color: rgba(6, 22, 32, 0.9);
-			    max-width: 474px;
 			    padding: 20px;
 			    position: absolute;
-			    height: 735px;
+			    height: 670px;
 
 			    p {
 			    	font-size: 14px;
@@ -41,6 +41,8 @@
 			    	line-height: 16px;
 			    	padding-bottom: 24px;
 			    	-webkit-font-smoothing: antialiased !important;
+			    	width: 90%;
+			    	margin: 0 auto;
 			    }
 
 			    p:nth-child(1) {
@@ -126,11 +128,12 @@
 
 			.carousel {
 				position: relative;
-				.carousel-slide1 {position: absolute; width: 300px; right:0px; width: 350px; right: 13px; top: 312px;}
-				.carousel-slide2 {position: absolute; width: 300px; right: 63px; top: 103px;}
-				.carousel-slide3 {position: absolute; width: 240px; left:270px; top:460px}
-				.carousel-slide4 {position: absolute; width: 170px; left: 340px; top: 336px;}
-				.carousel-slide5 { position: absolute; top: 557px; right: 193px; width: 170px;}
+				.carousel-slide1 {position: absolute; width: 300px; right:0px; width: 350px; right: 13px; top: 364px;}
+				.carousel-slide2 {position: absolute; width: 300px; right: 63px; top: 156px;}
+				.carousel-slide3 {position: absolute; width: 240px; left:270px; top:537px}
+				.carousel-slide4 {position: absolute; width: 170px; left: 340px; top: 413px;}
+				.carousel-slide5 { position: absolute; top: 608px; right: 193px; width: 170px;}
+				.carousel-slide6 { position: absolute; top: 608px; right: 14px; width: 170px;}
 
 			}
 	    }
@@ -141,11 +144,15 @@
 
 @media only screen and (min-width: 0px) and (max-width : 767px) { 
 	.section7 {
-		height: 1067px;
+		height: 1100px;
 		.s7wrap {
-			width: 320px;;
+			width: 280px;
 			.innerContent {
-				height: 735px;
+				height: 870px;
+				max-width: 280px;
+				margin: 0 auto;
+
+
 
 							    li {
 					font-size: 14px;

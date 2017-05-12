@@ -8,6 +8,9 @@
 		<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0" />
 	</head>
 	<body>
+	<div id="preloader-overlay">
+    <div class="preloader"></div>
+</div>
 		<div class="features-tb" style="border:1px solid #d9d9d9;background-color:#f8f8f8;text-align: center;/* padding: 4px 0; */height: 50px;">
 			<ul>
 				<li style="float: left;margin-left: -34px;">
@@ -115,15 +118,17 @@
 						<img src="images/03_Collage-Images.jpg" class="carousel-slide3" alt="">
 						<img src="images/04_Collage-Images.jpg" class="carousel-slide4" alt="">
 						<img src="images/05_Collage-Images.jpg" class="carousel-slide5" alt="">
+						<img src="images/06_Collage-Images.jpg" class="carousel-slide6" alt="">
+						
 					</div>				
 					</div>
 				</div>
 
 				<div class="col span_12_of_12 section8"> 
 					<div class="s8wrap">
-											<div class="innerContent">
-						<h2>NEW<br/> Coastal Cypress<br/> & Sea Fennel</h2>
-						<p>Classic marine notes take on a refreshingly modern twist with Australian sea fennel and salt-sprayed cypress in a sophisticated  <span>eau de toilette</span> , <span>shower gel</span> and a revitalising <span>deodorant spray</span>.</p>
+						<div class="innerContent">
+							<h2>NEW<br/> Coastal Cypress<br/> & Sea Fennel</h2>
+								<p>Classic marine notes take on a refreshingly modern twist with Australian sea fennel and salt-sprayed cypress in a sophisticated  <span>eau de toilette</span> , <span>shower gel</span> and a revitalising <span>deodorant spray</span>.</p>
 							<div href="" class="cta">SHOP NOW</a>
 							</div>
 
@@ -132,5 +137,42 @@
 
 
 			</div>
+
+<script type="text/javascript">
+$( document ).ready(function() {
+
+	//Pre-loader
+	$(window).load(function(){
+		$('#preloader-overlay').fadeOut('slow',function(){$(this).remove();});
+	});
+
+	// Video 
+	$('#open-video').click(function(e){
+		$("#video").remove();
+		$(".overlay").addClass("active");
+		$(".overlay").prepend( "<iframe class='video-iframe' width='80%' height='80%' src='//youtube.com/embed/g0dbj94r2Yg?modestbranding=1&rel=0&showinfo=0&color=white&wmode=opaque&autoplay=1' id='video' frameborder='0' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>" );
+		e.preventDefault();
+		history.pushState('', '', '?video=open');
+	});
+
+	if ( window.location.href.indexOf('video=open') > -1 ) {
+		$("#video").remove();
+		$(".overlay").addClass("active");
+		$(".overlay").prepend( "<iframe class='video-iframe' width='80%' height='80%' src='//youtube.com/embed/g0dbj94r2Yg?modestbranding=1&rel=0&showinfo=0&color=white&wmode=opaque&autoplay=1' id='video' frameborder='0' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>" );
+	};
+
+	$('#close-video').click(function(e){
+		$("#video").remove();
+		$(".overlay").removeClass("active");
+		e.preventDefault();
+		history.pushState('','', window.location.protocol + '//' + window.location.host + window.location.pathname);
+	});
+	
+});
+</script>
+
+	<div class="overlay" id="close-video">
+    	<span>Close X</span>
+    </div>
 		</body>
 	</html>

@@ -5,6 +5,58 @@ body, img, h2, h3 {
 body {
   min-width: 100% !important; }
 
+/* pre-loader */
+#preloader-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#16577f+0,ffffff+100 */
+  background: #16577f;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #16577f 0%, #ffffff 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #16577f 0%, #ffffff 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #16577f 0%, #ffffff 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16577f', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */ }
+
+#preloader-overlay .preloader {
+  background: url("/MBPromoImages/Microsites/Rosa2016/BehindBlend/preloader.png") no-repeat;
+  width: 41px;
+  height: 41px;
+  margin: -19px 0 0 -19px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-animation: spin 1.5s linear infinite;
+  -moz-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite; }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
 .absolute-center {
   margin: auto;
   position: absolute;
@@ -553,7 +605,7 @@ body {
   background: url("images/08_Your-Adventure.jpg") 50% 50% no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 844px; }
+  height: 920px; }
   .uncharted-wrap .section7 h2 {
     font-size: 25px;
     color: #fff;
@@ -569,20 +621,22 @@ body {
     width: 883px;
     margin: 0 auto;
     position: relative;
-    height: 695px; }
+    height: 695px;
+    padding-top: 16px; }
     .uncharted-wrap .section7 .s7wrap .innerContent {
       max-width: 500px;
       background-color: rgba(6, 22, 32, 0.9);
-      max-width: 474px;
       padding: 20px;
       position: absolute;
-      height: 735px; }
+      height: 670px; }
       .uncharted-wrap .section7 .s7wrap .innerContent p {
         font-size: 14px;
         color: #fff;
         line-height: 16px;
         padding-bottom: 24px;
-        -webkit-font-smoothing: antialiased !important; }
+        -webkit-font-smoothing: antialiased !important;
+        width: 90%;
+        margin: 0 auto; }
       .uncharted-wrap .section7 .s7wrap .innerContent p:nth-child(1) {
         text-align: center;
         font-size: 14px;
@@ -648,35 +702,42 @@ body {
         right: 0px;
         width: 350px;
         right: 13px;
-        top: 312px; }
+        top: 364px; }
       .uncharted-wrap .section7 .s7wrap .carousel .carousel-slide2 {
         position: absolute;
         width: 300px;
         right: 63px;
-        top: 103px; }
+        top: 156px; }
       .uncharted-wrap .section7 .s7wrap .carousel .carousel-slide3 {
         position: absolute;
         width: 240px;
         left: 270px;
-        top: 460px; }
+        top: 537px; }
       .uncharted-wrap .section7 .s7wrap .carousel .carousel-slide4 {
         position: absolute;
         width: 170px;
         left: 340px;
-        top: 336px; }
+        top: 413px; }
       .uncharted-wrap .section7 .s7wrap .carousel .carousel-slide5 {
         position: absolute;
-        top: 557px;
+        top: 608px;
         right: 193px;
+        width: 170px; }
+      .uncharted-wrap .section7 .s7wrap .carousel .carousel-slide6 {
+        position: absolute;
+        top: 608px;
+        right: 14px;
         width: 170px; }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .uncharted-wrap .section7 {
-    height: 1067px; }
+    height: 1100px; }
     .uncharted-wrap .section7 .s7wrap {
-      width: 320px; }
+      width: 280px; }
       .uncharted-wrap .section7 .s7wrap .innerContent {
-        height: 735px; }
+        height: 870px;
+        max-width: 280px;
+        margin: 0 auto; }
         .uncharted-wrap .section7 .s7wrap .innerContent li {
           font-size: 14px;
           color: #fff;
@@ -747,11 +808,10 @@ body {
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .uncharted-wrap .section8 {
-    background: url("images/09_The-Collection_Mobile.jpg") 50% no-repeat;
-    height: 575px;
-    background-position: left;
-    max-width: 100%;
-    background-size: 100%; }
+    background: url("images/09_The-Collection_Mobile.jpg") 50% 50% no-repeat;
+    height: 660px;
+    background-position: center center;
+    background-size: cover; }
     .uncharted-wrap .section8 h2 {
       padding-top: 50px; }
     .uncharted-wrap .section8 .s8wrap {
@@ -762,4 +822,5 @@ body {
         top: 0; }
         .uncharted-wrap .section8 .s8wrap .innerContent p {
           padding-top: 30px;
-          max-width: 230px; } }
+          max-width: 230px;
+          color: #000; } }
