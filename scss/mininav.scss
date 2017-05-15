@@ -1,0 +1,19 @@
+.mininav {
+	width: 100%;
+	background: #071823;
+	text-align: center;
+	ul {
+		display: inline-block;
+		text-align: center;
+	}
+	li {
+		display: inline-block;
+		
+		font-size: 15px;
+		line-height: 60px;
+		padding-right: 22px;
+	}
+	a {
+		color: #fff;
+	}
+}

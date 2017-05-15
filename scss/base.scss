@@ -109,3 +109,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16577f', end
         -o-transition: all .4s ease-in-out .2s;
         transition: all .4s ease-in-out .2s;        
     }
+
+    @keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
