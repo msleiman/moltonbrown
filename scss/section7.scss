@@ -28,6 +28,12 @@
 	    	height: 695px;
 	    	padding-top: 16px;
 
+	    	img:hover {
+			    transform: scale(1.1);
+				-ms-transform: scale(1.1);
+				-webkit-transform: scale(1.1);
+			}
+
 	    	.innerContent {
 	    		max-width: 500px;
 				background-color: rgba(6, 22, 32, 0.9);

@@ -747,6 +747,10 @@
     position: relative;
     height: 695px;
     padding-top: 16px; }
+    .uncharted-wrap .section7 .s7wrap img:hover {
+      transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -webkit-transform: scale(1.1); }
     .uncharted-wrap .section7 .s7wrap .innerContent {
       max-width: 500px;
       background-color: rgba(6, 22, 32, 0.9);
