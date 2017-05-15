@@ -6,11 +6,13 @@
 		<link rel="stylesheet" type="text/css" href="http://css.moltonbrown.co.uk/css/default.css?version=9">
 		<link rel="stylesheet" href="http://css.moltonbrown.co.uk/css/mb.css?version=9">
 		<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0" />
+		 <script type="text/javascript" src="http://jscripts.moltonbrown.co.uk/javascript/jquery.min-1.11.1.js?version=9"></script>
+
 	</head>
 	<body>
-	<div id="preloader-overlay">
+<!-- 	<div id="preloader-overlay">
     <div class="preloader"></div>
-</div>
+</div> -->
 		<div class="features-tb" style="border:1px solid #d9d9d9;background-color:#f8f8f8;text-align: center;/* padding: 4px 0; */height: 50px;">
 			<ul>
 				<li style="float: left;margin-left: -34px;">
@@ -24,6 +26,13 @@
 				</ul>
 			</div>
 			<div class="section group uncharted-wrap">
+			<div class="hero">
+			<div class="innerContent">
+				<h2>Coastal Cypress & Sea Fennel</h2>
+				<h1>INTO THE UNCHARTED</h1>
+			</div>
+
+			</div>
 				<div class="col span_12_of_12 section2">
 					<h2 class="trebuchet">AWASH</h2>
 					<h3 class="trebuchet">YOUR SENSES</h3>
@@ -60,14 +69,16 @@
 						<div class="intro">
 							<p class="trebuchet">Our adventure takes us to the northernmost part of Australia, to the remote peninsula of Cape York where we sourced our lead ingredient. Discover more about blue cypress; a unique essential oil indigenous to this largely unexplored and unspoilt territory.</p>
 						</div>
-						<div class="video">
-							<img src="images/section3Video.png" alt="">
+						<div class="video" id="open-video">
+							<a href="#" manual_cm_sp="PearHoneyBTBCTAPearVideo" id="open-video" data-ajax="false">
+							<img src="images/section3Video.png">
+							</a>
 						</div>
 					</div>
 					
 				</div>
 				<div class="col span_12_of_12 section4">
-					<h2>CARLA’S</h2>
+					<h2>CARLA'S</h2>
 					<h3>CREATION</h3>
 					<div class="s4wrap">
 						<div class="innerContent">
@@ -75,7 +86,10 @@
 							<p>Master Perfumer at Fragrances Essentielles, <span>Carla Chabert</span> explores the meaning of uncharted and captures the essence of the sea with a salt-sprayed infusion.</p>
 						</div>
 						<div class="section4Video">
-							<img src="images/section4vid.png" alt="">
+						<a href="" id="carla-video">
+							<img src="images/section4vid.png" alt="" >
+						</a>
+							
 						</div>
 					</div>
 				</div>
@@ -88,13 +102,16 @@
 								<p>Embarking on expeditions around the world and risking the unknown, Molton Brown team up with adventurer <span>Alastair Humphreys</span> who embodies the spirit of <span class="underline">Coastal Cypress & Sea Fennel</span> and inspires others to explore.</p>
 							</div>
 							<div class="section4Video">
-								<img src="images/alastrairvideo.png" alt="">
+								<a href="" id="alastrair-video">
+									<img src="images/alastrairvideo.png" alt="">
+								</a>
 							</div>
 						</div>
 					</div>
 				<div class="col span_12_of_12 section6"> 
 					<h2>IMMERSE</h2>
 					<h3>YOURSELF</h3>
+					<a href="" id="uncharted-video">link</a>
 				</div>
 
 				<div class="col span_12_of_12 section7"> 
@@ -112,7 +129,7 @@
 						<li>Leave the world behind. Put your phone on airplane mode so you’re not bombarded with messages or tempted by social media. Post your pictures when you get home.</li>
 					</ul>
 					</div>
-												<div class="carousel">
+					<div class="carousel">
 						<img src="images/01_Collage-Images.jpg" class="carousel-slide1" alt="">
 						<img src="images/02_Collage-Images.jpg" class="carousel-slide2" alt="">
 						<img src="images/03_Collage-Images.jpg" class="carousel-slide3" alt="">
@@ -142,15 +159,81 @@
 $( document ).ready(function() {
 
 	//Pre-loader
-	$(window).load(function(){
-		$('#preloader-overlay').fadeOut('slow',function(){$(this).remove();});
-	});
+	// $(window).load(function(){
+	// 	$('#preloader-overlay').fadeOut('slow',function(){$(this).remove();});
+	// });
 
 	// Video 
 	$('#open-video').click(function(e){
 		$("#video").remove();
 		$(".overlay").addClass("active");
+		$(".overlay").prepend( "<iframe class='video-iframe' width='100%' height='100%' src='https://www.youtube.com/embed/ASZXXXNhRgU?modestbranding=1&rel=0&showinfo=0&color=white&wmode=opaque&autoplay=1' id='video' frameborder='0' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>" );
+		e.preventDefault();
+		history.pushState('', '', '?video=open');
+	});
+
+	if ( window.location.href.indexOf('video=open') > -1 ) {
+		$("#video").remove();
+		$(".overlay").addClass("active");
 		$(".overlay").prepend( "<iframe class='video-iframe' width='80%' height='80%' src='//youtube.com/embed/g0dbj94r2Yg?modestbranding=1&rel=0&showinfo=0&color=white&wmode=opaque&autoplay=1' id='video' frameborder='0' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>" );
+	};
+
+	$('#close-video').click(function(e){
+		$("#video").remove();
+		$(".overlay").removeClass("active");
+		e.preventDefault();
+		history.pushState('','', window.location.protocol + '//' + window.location.host + window.location.pathname);
+	});
+
+		$('#carla-video').click(function(e){
+		$("#video").remove();
+		$(".overlay").addClass("active");
+		$(".overlay").prepend( "<iframe class='video-iframe' width='100%' height='100%' src='https://www.youtube.com/embed/sTFjA3hQt7w?modestbranding=1&rel=0&showinfo=0&color=white&wmode=opaque&autoplay=1' id='video' frameborder='0' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>" );
+		e.preventDefault();
+		history.pushState('', '', '?video=open');
+	});
+
+	if ( window.location.href.indexOf('video=open') > -1 ) {
+		$("#video").remove();
+		$(".overlay").addClass("active");
+		$(".overlay").prepend( "<iframe class='video-iframe' width='80%' height='80%' src='//youtube.com/embed/g0dbj94r2Yg?modestbranding=1&rel=0&showinfo=0&color=white&wmode=opaque&autoplay=1' id='video' frameborder='0' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>" );
+	};
+
+	$('#close-video').click(function(e){
+		$("#video").remove();
+		$(".overlay").removeClass("active");
+		e.preventDefault();
+		history.pushState('','', window.location.protocol + '//' + window.location.host + window.location.pathname);
+	});
+	//alastrair-video
+
+			$('#alastrair-video').click(function(e){
+		$("#video").remove();
+		$(".overlay").addClass("active");
+		$(".overlay").prepend( "<iframe class='video-iframe' width='100%' height='100%' src='https://www.youtube.com/embed/Xt_CF7uYcQs?modestbranding=1&rel=0&showinfo=0&color=white&wmode=opaque&autoplay=1' id='video' frameborder='0' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>" );
+		e.preventDefault();
+		history.pushState('', '', '?video=open');
+	});
+
+	if ( window.location.href.indexOf('video=open') > -1 ) {
+		$("#video").remove();
+		$(".overlay").addClass("active");
+		$(".overlay").prepend( "<iframe class='video-iframe' width='80%' height='80%' src='//youtube.com/embed/g0dbj94r2Yg?modestbranding=1&rel=0&showinfo=0&color=white&wmode=opaque&autoplay=1' id='video' frameborder='0' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>" );
+	};
+
+	$('#close-video').click(function(e){
+		$("#video").remove();
+		$(".overlay").removeClass("active");
+		e.preventDefault();
+		history.pushState('','', window.location.protocol + '//' + window.location.host + window.location.pathname);
+	});
+
+	//uncharted-video
+
+				$('#uncharted-video').click(function(e){
+		$("#video").remove();
+		$(".overlay").addClass("active");
+		$(".overlay").prepend( "<iframe class='video-iframe' width='100%' height='100%' src='https://www.youtube.com/embed/vTKDsxnr9E4?modestbranding=1&rel=0&showinfo=0&color=white&wmode=opaque&autoplay=1' id='video' frameborder='0' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>" );
 		e.preventDefault();
 		history.pushState('', '', '?video=open');
 	});
@@ -174,5 +257,7 @@ $( document ).ready(function() {
 	<div class="overlay" id="close-video">
     	<span>Close X</span>
     </div>
+
+   
 		</body>
 	</html>

@@ -1,10 +1,9 @@
 .hero {
 		position: relative;
-    	// background-attachment: fixed; 
-    	img {
-		width: 100%;
-		display: block;
-	}
+		background: url("images/01_Intro_Back-up-Still-Image.jpg") 50% 50% no-repeat;
+		background-size: cover;
+	    background-position: center center; 
+	    min-height: 786px;
 
 
 .innerContent {

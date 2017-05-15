@@ -142,12 +142,14 @@ h3 {
 					font-size: 14px;
     				line-height: 18px;
 				}
-				.left, .right {
+				.left {
 					width: 100%!important;
 				}
 
 				.right {
-					padding-left: 9px;
+					width: 272px;
+					margin: 0 auto; 
+					float: none;
 					
 				p {
 					font-size: 11px!important;
