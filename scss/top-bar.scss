@@ -26,7 +26,7 @@
 			height: 36px;
 			vertical-align: middle;
 			width: 36px;
-			background-position: 0 -46px;
+			background-position: 0px -92px;
 			float: right;
 }
 
@@ -52,6 +52,13 @@
 			vertical-align: middle;
 			visibility: visible;
 			width: 0;
+}
+
+.features-tb ul {
+    text-align: right;
+    margin-right: 8px;
+    width: 964px;
+    margin: 0 auto;
 }
 
 #gift-concierge i, #gift-concierge em {

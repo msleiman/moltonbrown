@@ -1,7 +1,3 @@
-body, img, h2, h3 {
-  padding: 0;
-  margin: 0; }
-
 .mb_page_wrapper {
   width: 100% !important; }
 
@@ -132,7 +128,7 @@ body, img, h2, h3 {
   height: 36px;
   vertical-align: middle;
   width: 36px;
-  background-position: 0 -46px;
+  background-position: 0px -92px;
   float: right; }
 
 .features-link {
@@ -155,6 +151,12 @@ body, img, h2, h3 {
   vertical-align: middle;
   visibility: visible;
   width: 0; }
+
+.features-tb ul {
+  text-align: right;
+  margin-right: 8px;
+  width: 964px;
+  margin: 0 auto; }
 
 #gift-concierge i, #gift-concierge em {
   font-family: Georgia, 'Times New Roman', Times, serif !important; }
@@ -235,14 +237,23 @@ body, img, h2, h3 {
   .span_1_of_12, .span_2_of_12, .span_3_of_12, .span_4_of_12, .span_5_of_12, .span_6_of_12, .span_7_of_12, .span_8_of_12, .span_9_of_12, .span_10_of_12, .span_11_of_12, .span_12_of_12 {
     width: 100%; } }
 
+.static_content_test .mb_page_wrapper * {
+  box-sizing: inherit !important; }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  body {
+    min-width: 100% !important; } }
+
 .uncharted-wrap .hero {
   position: relative;
-  background: url("/MBPromoImages/Website_Assets/into-the-uncharted/01_Intro_Back-up-Still-Image.jpg") 50% 50% no-repeat;
+  background: url("MBPromoImages/Website_Assets/into-the-uncharted/01_Intro_Back-up-Still-Image.jpg") 50% 50% no-repeat;
   background-size: cover;
   background-position: center center;
-  min-height: 786px; }
+  min-height: 850px; }
   .uncharted-wrap .hero .innerContent {
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center; }
     .uncharted-wrap .hero .innerContent h2 {
       font-size: 33px;
       color: #fff;
@@ -262,28 +273,41 @@ body, img, h2, h3 {
       text-align: center;
       color: #fff;
       font-family: "Trebuchet", Trebuchet MS !important; }
-      .uncharted-wrap .hero .innerContent h1:after {
-        content: url("/MBPromoImages/Website_Assets/into-the-uncharted/dive-in.png");
-        display: block;
-        padding-top: 94px; }
+    .uncharted-wrap .hero .innerContent .divein-logo {
+      padding-top: 233px; }
+    .uncharted-wrap .hero .innerContent p {
+      font-size: 14px;
+      color: #fff;
+      padding-top: 17px; }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .uncharted-wrap .hero {
-    background: url("/MBPromoImages/Website_Assets/into-the-uncharted/mobile-intro.gif") 50% 50% no-repeat;
+    background: url("MBPromoImages/Website_Assets/into-the-uncharted/mobile-intro.gif") 50% 50% no-repeat;
     background-size: cover;
     background-position: 100% 100%;
-    min-height: 846px; }
-    .uncharted-wrap .hero h2 {
-      width: 60%; }
-    .uncharted-wrap .hero img {
-      display: none; }
-    .uncharted-wrap .hero h1 {
-      width: 77%;
-      margin: 0 auto; } }
+    min-height: 442px;
+    height: 500px; }
+    .uncharted-wrap .hero .innerContent {
+      max-width: 100%; }
+      .uncharted-wrap .hero .innerContent h2 {
+        width: 50%;
+        font-size: 22px; }
+      .uncharted-wrap .hero .innerContent h3 {
+        font-size: 14px; }
+      .uncharted-wrap .hero .innerContent img {
+        display: none; }
+      .uncharted-wrap .hero .innerContent h1 {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 40px;
+        padding-top: 50px; }
+      .uncharted-wrap .hero .innerContent .divein-logo {
+        display: inline-block;
+        padding-top: 50px; } }
 
 .uncharted-wrap .section2 {
   position: relative;
-  background: url("/MBPromoImages/Website_Assets/into-the-uncharted/03_The-Ingredients.jpg") 50% 50% no-repeat;
+  background: url("MBPromoImages/Website_Assets/into-the-uncharted/03_The-Ingredients.jpg") 50% 50% no-repeat;
   background-size: cover;
   background-position: center center;
   min-height: 786px; }
@@ -308,7 +332,7 @@ body, img, h2, h3 {
     max-width: 780px;
     padding: 72px 66px 66px 66px; }
     .uncharted-wrap .section2 .innerContent:before {
-      background: url("/MBPromoImages/Website_Assets/into-the-uncharted/quote.png") 100% no-repeat;
+      background: url("MBPromoImages/Website_Assets/into-the-uncharted/quote.png") 100% no-repeat;
       content: url("");
       top: 3px;
       left: 30px;
@@ -402,7 +426,7 @@ body, img, h2, h3 {
 
 .uncharted-wrap .section3 {
   position: relative;
-  background: url("/MBPromoImages/Website_Assets/into-the-uncharted/04_Cape-York.jpg") 50% 50% no-repeat;
+  background: url("MBPromoImages/Website_Assets/into-the-uncharted/04_Cape-York.jpg") 50% 50% no-repeat;
   background-size: cover;
   background-position: center center;
   min-height: 846px; }
@@ -467,7 +491,7 @@ body, img, h2, h3 {
 
 .uncharted-wrap .section4 {
   position: relative;
-  background: url("/MBPromoImages/Website_Assets/into-the-uncharted/05_Carlas-Creation.jpg") 50% 50% no-repeat;
+  background: url("MBPromoImages/Website_Assets/into-the-uncharted/05_Carlas-Creation.jpg") 50% 50% no-repeat;
   background-size: cover;
   background-position: center center;
   height: 844px; }
@@ -501,7 +525,7 @@ body, img, h2, h3 {
         font-family: Georgia;
         line-height: 25px; }
         .uncharted-wrap .section4 .s4wrap .innerContent p:before {
-          background: url("/MBPromoImages/Website_Assets/into-the-uncharted/quote.png") 100% no-repeat;
+          background: url("MBPromoImages/Website_Assets/into-the-uncharted/quote.png") 100% no-repeat;
           content: url("");
           top: 3px;
           left: 30px;
@@ -523,7 +547,8 @@ body, img, h2, h3 {
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .uncharted-wrap .section4 {
-    height: 844px; }
+    height: 820px;
+    background-position: -1280px; }
     .uncharted-wrap .section4 .s4wrap {
       width: 285px;
       margin: 0 auto; }
@@ -545,7 +570,7 @@ body, img, h2, h3 {
 
 .uncharted-wrap .section5 {
   position: relative;
-  background: url("/MBPromoImages/Website_Assets/into-the-uncharted/06_Alastairs-Adventure.jpg") 50% 50% no-repeat;
+  background: url("MBPromoImages/Website_Assets/into-the-uncharted/06_Alastairs-Adventure.jpg") 50% 50% no-repeat;
   background-size: cover;
   background-position: center center;
   height: 844px; }
@@ -579,7 +604,7 @@ body, img, h2, h3 {
         font-family: Georgia;
         line-height: 25px; }
         .uncharted-wrap .section5 .s4wrap .innerContent p:before {
-          background: url("images/quote.png") 100% no-repeat;
+          background: url("MBPromoImages/Website_Assets/into-the-uncharted/quote.png") 100% no-repeat;
           content: url("");
           top: 3px;
           left: 30px;
@@ -603,7 +628,8 @@ body, img, h2, h3 {
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .uncharted-wrap .section5 {
-    height: 844px; }
+    height: 752px;
+    background-position: -430px; }
     .uncharted-wrap .section5 .s4wrap {
       width: 285px;
       margin: 0 auto; }
@@ -612,38 +638,44 @@ body, img, h2, h3 {
         left: 0;
         display: block;
         text-align: center;
-        padding: 42px;
-        right: 0; }
+        right: 0;
+        margin-top: 22px;
+        padding: 0; }
         .uncharted-wrap .section5 .s4wrap .innerContent p {
-          font-size: 20px; }
+          font-size: 20px;
+          width: 220px;
+          margin: 0 auto;
+          padding-top: 40px;
+          padding-bottom: 10px; }
         .uncharted-wrap .section5 .s4wrap .innerContent p:last-child {
-          padding-top: 10px; }
+          padding-top: 10px;
+          width: 208px; }
       .uncharted-wrap .section5 .s4wrap .section4Video {
         padding-top: 0; }
         .uncharted-wrap .section5 .s4wrap .section4Video img {
           width: 100%;
-          padding-top: 505px; } }
+          padding-top: 440px; } }
 
 .uncharted-wrap .section6 {
   position: relative;
-  background: url("/MBPromoImages/Website_Assets/into-the-uncharted/07_Immerse-Yourself.jpg") 50% 50% no-repeat;
+  background: url("MBPromoImages/Website_Assets/into-the-uncharted/07_Immerse-Yourself.jpg") 50% 50% no-repeat;
   background-size: cover;
   background-position: center center;
   height: 844px; }
   .uncharted-wrap .section6 h2 {
-    font-size: 25px;
+    font-size: 34px;
     color: #fff;
     text-align: center;
     font-family: "Trebuchet", Trebuchet MS !important;
     padding-top: 50px; }
   .uncharted-wrap .section6 h3 {
-    font-size: 48px;
+    font-size: 18px;
     color: #fff;
     text-align: center; }
 
 .uncharted-wrap .section7 {
   position: relative;
-  background: url("/MBPromoImages/Website_Assets/into-the-uncharted/08_Your-Adventure.jpg") 50% 50% no-repeat;
+  background: url("MBPromoImages/Website_Assets/into-the-uncharted/08_Your-Adventure.jpg") 50% 50% no-repeat;
   background-size: cover;
   background-position: center center;
   height: 920px; }
@@ -800,7 +832,7 @@ body, img, h2, h3 {
 
 .uncharted-wrap .section8 {
   position: relative;
-  background: url("/MBPromoImages/Website_Assets/into-the-uncharted/09_The-Collection_Desktop.jpg") 50% 50% no-repeat;
+  background: url("MBPromoImages/Website_Assets/into-the-uncharted/09_The-Collection_Desktop.jpg") 50% 50% no-repeat;
   background-size: cover;
   background-position: center center;
   height: 844px; }
@@ -849,7 +881,7 @@ body, img, h2, h3 {
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .uncharted-wrap .section8 {
-    background: url("images/09_The-Collection_Mobile.jpg") 50% 50% no-repeat;
+    background: url("MBPromoImages/Website_Assets/into-the-uncharted/09_The-Collection_Mobile.jpg") 50% 50% no-repeat;
     height: 660px;
     background-position: center center;
     background-size: cover; }

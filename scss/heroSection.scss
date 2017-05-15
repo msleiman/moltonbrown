@@ -3,11 +3,13 @@
 		background: url("MBPromoImages/Website_Assets/into-the-uncharted/01_Intro_Back-up-Still-Image.jpg") 50% 50% no-repeat;
 		background-size: cover;
 	    background-position: center center; 
-	    min-height: 786px;
+	    min-height: 850px;
 
 
 .innerContent {
 			margin: 0 auto;
+			max-width: 600px;
+			text-align: center;
 
 			h2 {
 				font-size: 33px;
@@ -33,12 +35,22 @@
 				text-align: center;
 				color: #fff;
 				font-family: 'Trebuchet', Trebuchet MS!important;
-					&:after {
-					content: url('MBPromoImages/Website_Assets/into-the-uncharted/dive-in.png');
-					display: block;
-	    			padding-top: 94px;
+			// 		&:after {
+			// 		content: url('MBPromoImages/Website_Assets/into-the-uncharted/dive-in.png');
+			// 		display: block;
+	  //   			padding-top: 94px;
+			// }
+
+			}
+			.divein-logo {
+				padding-top: 233px;
+
 			}
 
+			p {
+				font-size: 14px;
+				color: #fff;
+				padding-top: 17px;
 			}
 		}
 	} 
@@ -53,18 +65,35 @@
 		background-size: cover;
     	// background-attachment: fixed;
     	background-position: 100% 100%; 
-    	min-height: 846px;
-
-		h2 {
-			width: 60%;
+    	min-height: 442px;
+	    height: 500px;
+    	.innerContent {
+    		max-width: 100%;
+    				h2 {
+			width: 50%;
+			font-size:  22px;
+		}
+		h3 {
+			font-size: 14px;
 		}
 		img {
 			display: none;
 		}
 		h1 {
-			width: 77%;
+			width: 90%;
 			margin: 0 auto;
+			font-size: 40px;
+			padding-top: 50px;
 		}
+				.divein-logo {
+			display: inline-block;
+			padding-top: 50px;
+			
+		}
+    	}
+
+
+
 
 	}
 }// mobile breakpoint
