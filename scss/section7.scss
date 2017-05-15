@@ -150,16 +150,13 @@
 
 @media only screen and (min-width: 0px) and (max-width : 767px) { 
 	.section7 {
-		height: 1100px;
+		height: 1284px;
 		.s7wrap {
 			width: 280px;
 			.innerContent {
 				height: 870px;
 				max-width: 280px;
 				margin: 0 auto;
-
-
-
 							    li {
 					font-size: 14px;
 			    	color: #fff;
@@ -195,7 +192,25 @@
 			}
 
 			.carousel {
-				display: none;
+									    width: 279px;
+					    margin-left: -21px;
+				.carousel-slide1, .carousel-slide2, .carousel-slide3, .carousel-slide4, .carousel-slide5, .carousel-slide6 {
+					position: inherit;
+					width: 100%;
+
+				}
+			}
+
+			.slick-slide img {
+				width: 100%!important;
+				&:hover {
+					transform: scale(1);
+				-ms-transform: scale(1);
+				-webkit-transform: scale(1);
+				}
+			}
+			.slick-prev, .slick-next {
+				top: 46%;
 			}
 		}
 	}

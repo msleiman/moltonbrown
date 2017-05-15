@@ -7,12 +7,13 @@
 		<link rel="stylesheet" href="http://css.moltonbrown.co.uk/css/mb.css?version=9">
 		<meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0" />
 		 <script type="text/javascript" src="http://jscripts.moltonbrown.co.uk/javascript/jquery.min-1.11.1.js?version=9"></script>
+		 <script type="text/javascript" src="http://www.moltonbrown.com/javascript/slick.js"></script>
 
 	</head>
 	<body>
-<!-- 	<div id="preloader-overlay">
+	<div id="preloader-overlay">
     <div class="preloader"></div>
-</div> -->
+</div>
 		<div class="features-tb" style="border:1px solid #d9d9d9;background-color:#f8f8f8;text-align: center;/* padding: 4px 0; */height: 50px;">
 			<ul>
 				<li style="float: left;margin-left: -34px;">
@@ -36,7 +37,12 @@
 			</div>
 
 			</div>
+			<div class="mobilenav">
+				<div class="open">MENU</div>
+				<div class="closenav">X</div>
+			</div>
 			<div class="col span_12_of_12 mininav">
+
 				<ul>
 					<li><a href="#theingredient">THE INGREDIENTS</a></li>
 					<li><a href="#capeyork">CAPE YORK</a> </li>
@@ -141,16 +147,28 @@
 						<li>If you’re nervous, find a friend to go with. You’ll encourage each other, egg each other on and have so many memories to laugh about.</li>
 						<li>Leave the world behind. Put your phone on airplane mode so you’re not bombarded with messages or tempted by social media. Post your pictures when you get home.</li>
 					</ul>
-					</div>
-					<div class="carousel">
-						<img src="/MBPromoImages/Website_Assets/into-the-uncharted/01_Collage-Images.jpg" class="carousel-slide1" alt="">
-						<img src="/MBPromoImages/Website_Assets/into-the-uncharted/02_Collage-Images.jpg" class="carousel-slide2" alt="">
-						<img src="/MBPromoImages/Website_Assets/into-the-uncharted/03_Collage-Images.jpg" class="carousel-slide3" alt="">
-						<img src="/MBPromoImages/Website_Assets/into-the-uncharted/04_Collage-Images.jpg" class="carousel-slide4" alt="">
-						<img src="/MBPromoImages/Website_Assets/into-the-uncharted/05_Collage-Images.jpg" class="carousel-slide5" alt="">
-						<img src="/MBPromoImages/Website_Assets/into-the-uncharted/06_Collage-Images.jpg" class="carousel-slide6" alt="">
+
+										<div class="carousel mobonly">
+						<div><img src="/MBPromoImages/Website_Assets/into-the-uncharted/01_Collage-Images.jpg" class="carousel-slide1" alt=""></div>
+						<div><img src="/MBPromoImages/Website_Assets/into-the-uncharted/02_Collage-Images.jpg" class="carousel-slide2" alt=""></div>
+						<div><img src="/MBPromoImages/Website_Assets/into-the-uncharted/03_Collage-Images.jpg" class="carousel-slide3" alt=""></div>
+						<div><img src="/MBPromoImages/Website_Assets/into-the-uncharted/04_Collage-Images.jpg" class="carousel-slide4" alt=""></div>
+						<div><img src="/MBPromoImages/Website_Assets/into-the-uncharted/05_Collage-Images.jpg" class="carousel-slide5" alt=""></div>
+						<div><img src="/MBPromoImages/Website_Assets/into-the-uncharted/06_Collage-Images.jpg" class="carousel-slide6" alt=""></div>
 						
-					</div>				
+						</div>	
+					</div>
+
+										<div class="carousel deskonly">
+						<div><img src="/MBPromoImages/Website_Assets/into-the-uncharted/01_Collage-Images.jpg" class="carousel-slide1" alt=""></div>
+						<div><img src="/MBPromoImages/Website_Assets/into-the-uncharted/02_Collage-Images.jpg" class="carousel-slide2" alt=""></div>
+						<div><img src="/MBPromoImages/Website_Assets/into-the-uncharted/03_Collage-Images.jpg" class="carousel-slide3" alt=""></div>
+						<div><img src="/MBPromoImages/Website_Assets/into-the-uncharted/04_Collage-Images.jpg" class="carousel-slide4" alt=""></div>
+						<div><img src="/MBPromoImages/Website_Assets/into-the-uncharted/05_Collage-Images.jpg" class="carousel-slide5" alt=""></div>
+						<div><img src="/MBPromoImages/Website_Assets/into-the-uncharted/06_Collage-Images.jpg" class="carousel-slide6" alt=""></div>
+						
+						</div>	
+			
 					</div>
 				</div>
 
@@ -169,11 +187,10 @@
 
 <script type="text/javascript">
 $( document ).ready(function() {
-
-	//Pre-loader
-	// $(window).load(function(){
-	// 	$('#preloader-overlay').fadeOut('slow',function(){$(this).remove();});
-	// });
+	// Pre-loader
+	$(window).load(function(){
+		$('#preloader-overlay').fadeOut('slow',function(){$(this).remove();});
+	});
 
 	// Video 
 	$('#open-video').click(function(e){
@@ -264,9 +281,60 @@ $( document ).ready(function() {
 	});
 	
 });
+
+if ($(window).width() > 667) {
+	$(window).scroll(function(){        
+var section2 = $('.section2').offset();                  
+    if ($(this).scrollTop() > section2.top) {
+        $('.mininav').fadeIn(500);
+        $('.mininav').addClass('fixednav');
+    } else {
+
+        $('.mininav').removeClass('fixednav');
+    }
+});
+}
+
+
+
 </script>
 
+<script>
 
+    $(document).ready(function() {
+        if ($(window).width() < 667) {
+            $(".carousel").slick({ infinite: true, slidesToShow: 1, slidesToScroll: 1, autoplay:true });
+        }
+
+        $(window).scroll(function(){                          
+            if ($(this).scrollTop() > 200) {
+                $('.mobilenav').fadeIn(500);
+            } else {
+                $('.mobilenav').fadeOut(500);
+            }
+        });
+
+        $('.mobilenav > .open').click(function(){
+  $(".mininav").css('display', 'block');
+  $(".mobilenav > .open").css('display', 'none');
+  $(".mobilenav > .closenav").css('display', 'block');    
+})
+$('.mobilenav > .closenav').click(function(){
+  $(".mininav").css('display', 'none');
+  $(".mobilenav > .open").css('display', 'block');
+  $(".mobilenav > .closenav").css('display', 'none');    
+})
+
+$('.uncharted-wrap .mininav li').click(function(){
+	$(".mininav").css('display', 'none');
+  $(".mobilenav > .open").css('display', 'block');
+  $(".mobilenav > .closenav").css('display', 'none');  
+})
+        
+    });
+
+
+</script>
 
 	<div class="overlay" id="close-video">
     	<span>Close X</span>
