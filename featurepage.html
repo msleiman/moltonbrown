@@ -1,0 +1,1784 @@
+<style>
+  .thumbnail {
+    height: 306px;
+}
+	/* global */	
+	#features-hub * {
+		box-sizing: border-box!important; /*fixes boostrap - global static content box breaks style*/
+	}
+	
+	#features-hub a {
+		text-decoration: none;
+	}
+	
+	#features-hub {
+		font-family: Trebuchet, Trebuchet MS, Arial, Helvetica, sans-serif;		
+		margin: 0 auto;
+		overflow: hidden;
+		position: relative;
+		-webkit-font-smoothing: antialiased; 
+		text-rendering: optimizelegibility;			
+		width: 964px;
+	}
+	#features-hub h1 {
+		font-size:35px;
+		line-height:32px;
+		padding-top: 30px;
+		padding-bottom: 22px;
+		text-align: center;
+	}
+	#features-hub h1 span {
+		text-transform:uppercase;
+	}
+	#features-hub i,
+	#features-hub em {
+		font-family:Georgia, 'Times New Roman', Times, serif !important;
+	}	
+	#features-hub a:hover {
+		text-decoration:none;
+	}
+	
+	/* Scroll */
+	#features-hub .scroll {
+		background-color: #464646;
+		cursor: pointer;
+		bottom: 0;
+		display: none;
+		height: 45px;
+		right: 20px;
+		position: fixed;
+		text-align: center;
+		width: 55px;
+		z-index: 4;
+	}
+	#features-hub .scroll span {
+		color: #fff;
+		display: block;
+		font-size: 14px;
+		margin-top: 7px;
+		text-transform: uppercase;			 
+	}
+	#features-hub .scroll i {
+		border-left: 10px solid transparent; 
+		border-right: 10px solid transparent; 
+		border-bottom: 10px solid #fff; 
+		display: block;
+		height: 0;
+		margin: 6px auto 0 auto;
+		width: 0;
+	}	
+	
+	/*line heading*/
+#features-hub h2.line {
+	overflow: hidden;
+	text-align: center;
+	font-size: 28px;
+	color:#000000;
+	margin-bottom: 20px;
+    line-height: 36px;
+}
+#features-hub h2.line:before,
+#features-hub h2.line:after {
+ background-color: #ccc;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 20%;
+}
+#features-hub h2.line:before {
+ right: 0.7em;
+ margin-left: -50%;
+}
+#features-hub h2.line:after {
+ left: 0.7em;
+ margin-right: -50%;
+ visibility: visible;
+}	
+
+/* Accordian */
+
+.panel-group .panel {
+	border-radius: 0px;
+}
+
+.panel-group .panel+.panel {
+    margin-top: 0px; /* closes the gap*/
+}
+
+.panel-body {
+	background: #f6f5f5;
+}
+
+.panel-default>.panel-heading {
+	background-color: #ffffff;
+	border-top: 1px solid #434343;
+    border-radius: 0px;
+}
+
+.panel-default{
+	border:none;
+}
+
+
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+	border:none; /* remove this for desktop border need for mobile - can change padding of this also for desktop*/
+}
+
+.panel-heading {
+    cursor: pointer;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.panel-title{
+	color: #434343;
+	font-size: 18px;
+}
+
+
+.panel-heading [data-toggle="collapse"]:after
+{
+	/*font-family: 'Glyphicons Halflings';*/
+	content: "\2212"; /* minus icon */
+	float: right;
+	color: #434343;
+	font-size: 43px;
+	line-height: 37px;
+}
+.panel-heading [data-toggle="collapse"].collapsed:after
+{
+	content: "\002b"; /* plus icon */	
+}
+
+
+/* Thumbnails */
+
+.caption {
+    height: 44px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+	text-transform: uppercase;
+	color: #000;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 6px;
+	font-size: 14px;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+	height: 46px;
+}
+
+.ratings a {
+	color:#000;
+}
+
+.thumbnail {
+    padding: 0;
+	/*Aftab add these two to make ribbon work*/
+	/*position: relative;
+    overflow: hidden;*/
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
+.thumbnail img {
+    width: 100%;
+	image-rendering: -webkit-optimize-contrast;
+	image-rendering: -moz-crisp-edges;         /* Firefox */
+    image-rendering:   -o-crisp-edges;         /* Opera */
+	/*-webkit-backface-visibility: hidden;*/
+	/*padding: 8px;*/
+}
+
+/* corner ribbon */
+
+#features-hub .ribbon-wrapper {
+    position: relative;
+    overflow: hidden;
+    margin: 8px;
+    margin-bottom: 0;
+}
+
+#features-hub .corner-ribbon {
+  width: 200px;
+  background: #ffffff;
+  position: absolute;
+  top: 16px;
+  right: -70px;
+  text-align: center;
+  line-height: 30px;
+  color: #000000;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  font-size: 18px;
+  text-transform: uppercase;
+  box-shadow: 0 0 20px #ccc;
+}
+
+
+	/* section: store-links */
+	#features-hub .store-link {
+		display: inline-block;
+		font-family: Georgia, 'Times New Roman', Times, serif !important;
+		font-size: 14px;
+		font-style: italic;
+		padding-top: 7px;
+	}		
+	#features-hub .store-link:after {
+		border-top: 5px solid transparent; 
+		border-left: 5px solid; 
+		border-bottom: 5px solid transparent; 
+		content:"";
+		display: inline-block;
+		height: 0;
+		margin-left: 5px;
+		vertical-align: middle;
+		visibility: visible;
+		width: 0;
+	}
+	
+	/* for store-links over two lines */
+	#features-hub .two-line {
+		padding-top:0px
+	}
+	
+	/* Features Sprites */
+	#features-hub .fs-36 {		
+		background: url("/MBPromoImages/Microsites/Features/features-sprite-36.png") no-repeat 0 0;
+		display: inline-block;
+		font-size: 0;
+		height: 36px;
+		vertical-align: middle;
+		width: 36px;
+		margin-left: 5px; /* creates spacing*/
+	}
+		#features-hub .newsroom {		
+		background: url(/MBPromoImages/Website_Assets/newsroom.gif) no-repeat 0 0;
+		display: inline-block;
+		font-size: 0;
+		height: 39px;
+		vertical-align: middle;
+		width: 36px;
+		margin-left: 5px;
+		background-size: 38px 39px;
+	}
+
+	#features-hub .accord-head {
+		margin-left: -5px; /* creates spacing*/
+		margin-right: 16px;
+	}
+	#features-hub .desk-nav {
+		margin-left: 0px; /* creates spacing*/
+		margin-right: 7px;
+		padding-top:40px;
+	}
+	#features-hub .know {
+		background-position: 0 -46px;
+	}
+	#features-hub .collections {
+		background-position: 0 -92px;
+	}
+	#features-hub .films {
+		background-position: 0 -138px;
+	}
+	#features-hub .londonvia {
+		background-position: 0 -184px;
+	}
+	#features-hub .travel {
+		background-position: 0 -230px;
+	}
+	
+	
+	/* Desktop Navigation */
+	
+	#features-hub ul {
+		padding-left: 25px;
+		padding-bottom: 8px;
+		margin: 0px;
+		border-bottom: 1px solid #434343;
+	}
+	#features-hub ul li {
+		display:inline-block;
+		margin-right:12px;
+		padding-bottom: 0;
+	}
+	
+	#features-hub ul li a {
+		font-family:Georgia, 'Times New Roman', Times, serif !important;
+		font-style: italic;
+		color:#000;
+		font-size: 16px;
+	}
+	
+	#features-hub .glyphicon-triangle-bottom {
+		font-size:12px;
+	}
+	
+	/* overlay */
+	#features-hub .overlay {
+		background: rgba(0,0,0,0.8);
+		display: none; 
+		height: 100%;
+		left: 0;
+		padding: 10%;
+		position: fixed; 
+		top: 0; 
+		width: 100%;
+		text-align: center;
+		z-index: 9999;  
+	}
+		#features-hub .overlay.active { 
+			display: block; 
+		}	
+		#features-hub .overlay > span { 
+			display: block;
+			font-size: 14px; 
+			line-height: 32px;  			
+			margin: 20px auto 0 auto; 
+			color: #ffffff;
+			cursor: pointer;
+			background: #464646; 
+			text-align: center; 			
+			width: 110px;
+		}
+			#features-hub .overlay > span:hover { 
+				background:#606060; 
+			}	
+
+	/* animated content */
+	#features-hub .overlay > span {		
+		-webkit-transition: all .4s ease-in-out .2s;
+		-moz-transition: all .4s ease-in-out .2s;
+		-ms-transition: all .4s ease-in-out .2s;
+	    -o-transition: all .4s ease-in-out .2s;
+		transition: all .4s ease-in-out .2s;		
+	}
+			
+	/* mobile: global */
+	html.ui-mobile #features-hub h1 {
+		font-size: 22px;
+		font-weight: normal;
+		padding: 11px 0;
+		margin:0;
+	}
+	
+	html.ui-mobile #features-hub {
+		margin-bottom: -20px;
+		width: 100%;
+	}
+	
+	/* mobile: Scroll */
+	html.ui-mobile #features-hub .scroll {
+		bottom: 50%;
+		right: 0;
+	}
+	
+	/* mobile: Features Sprites */
+	html.ui-mobile #features-hub .fs-36 {
+		background: url("/MBPromoImages/Microsites/Features/features-sprite-72.png") no-repeat 0 0;
+		background-size: 36px;
+	}
+	
+	html.ui-mobile #features-hub .know {
+		background-position: 0 -46px;
+	}
+	html.ui-mobile #features-hub .collections {
+		background-position: 0 -92px;
+	}
+	html.ui-mobile #features-hub .films {
+		background-position: 0 -138px;
+	}
+	html.ui-mobile #features-hub .londonvia {
+		background-position: 0 -184px;
+	}
+	html.ui-mobile #features-hub .travel {
+		background-position: 0 -230px;
+	}
+	
+	
+	/* mobile: overlay */
+	html.ui-mobile #features-hub .overlay {	
+		height: 100%;
+		padding: 10% 0;
+		width: 100%;
+		text-align: center;
+	}
+	
+	/* mobile: caption */
+	
+	html.ui-mobile .caption {
+		margin-bottom:8px;
+	}
+	
+	html.ui-mobile .panel-default>.panel-heading+.panel-collapse>.panel-body {
+		border-top: 1px solid #434343; /* remove this for desktop border need for mobile*/
+	}
+	
+	html.ui-mobile .thumbnail {
+		height: auto;
+	}
+</style>
+
+<div id="features-hub">
+
+<h1><i>Our world in</i> <span>features</span></h1>
+
+			<ul class="hidden-xs">
+				<li><a href="#trending" data-ajax="false"><span class="fs-36 desk-nav"></span>Trending <span style="font-size:13px;">&#9660;</span></a></li>
+				<li><a href="#know" data-ajax="false"><span class="fs-36 desk-nav know"></span>In the know <span style="font-size:13px;">&#9660;</span></a></li>
+				<li><a href="#collections" data-ajax="false"><span class="fs-36 desk-nav collections"></span>Collections <span style="font-size:13px;">&#9660;</span></a></li>
+				<li><a href="#films" data-ajax="false"><span class="fs-36 desk-nav films"></span>Films <span style="font-size:13px;">&#9660;</span></a></li>
+				<li><a href="#londonvia" data-ajax="false"><span class="fs-36 desk-nav londonvia"></span>London via the world <span style="font-size:13px;">&#9660;</span></a></li>
+				<li><a href="#travel" data-ajax="false"><span class="fs-36 desk-nav travel"></span>Travel <span style="font-size:13px;">&#9660;</span></a></li>
+			</ul>
+
+<div class="panel-group" id="accordion">
+  <!--Trending-->
+  <div class="panel panel-default">
+    <div class="panel-heading visible-xs">
+      <h4 class="panel-title collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#trending">
+        <a class="accordion-toggle">
+         <span class="fs-36 accord-head"></span><i>Trending</i>
+        </a>
+      </h4>
+    </div>
+	
+    <div id="trending" class="panel-collapse collapse">
+      <div class="panel-body">
+        <h2 class="line hidden-xs" style="padding-top: 14px;"><i>Trending</i></h2>
+		<!--start thumbnail content -->
+				<div class="row">
+						
+					<div class="col-sm-4 col-lg-4 col-md-4">
+							<div class="thumbnail">
+							<a href="/store/features/behind-the-fragrance/orange-bergamot" manual_cm_sp="Features-_-Trending-_-OrangeandBergamot" data-ajax="false">
+								<div class="ribbon-wrapper">
+								<div class="corner-ribbon">New</div>
+								<img class="img-responsive" src="/MBPromoImages/Website_Assets/orangeandbergamotv2.jpg" alt="Orange and Bergamot" >
+								</div>
+								<div class="caption">
+									<h4>ORANGE & BERGAMOT</h4>
+								</div>
+								<div class="ratings">
+									<div class="pull-right"><span class="fs-36"></span><span class="fs-36 collections"></span></div>
+									<p>
+										<span class="store-link">Behind the Fragrance</span>
+									</p>
+								</div>
+								</a>
+							</div>
+					</div>
+					
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/features/newsroom/john-lewis-exclusive" manual_cm_sp="Features-_-Trending-_-john-lewis-exclusive" data-ajax="false">
+                            <div class="ribbon-wrapper">
+							<div class="corner-ribbon">New</div>
+                            <img class="img-responsive" src="/MBPromoImages/Website_Assets/thumbv3.jpg" alt="John Lewis Exclusive" >
+							</div>
+                            <div class="caption">
+                                <h4>IN THE KNOW: NEWS</h4>
+                            </div>
+                            <div class="ratings">
+								<div class="pull-right"><span class="fs-36"></span><span class="newsroom"></span></div>
+                                <p>
+									<span style="padding-top: 0"class="store-link">Exclusive John Lewis<br/> preview</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+					
+					
+					
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/molton-brown-home-fragrance/" manual_cm_sp="Features-_-Trending-_-molton-brown-home-fragrance" data-ajax="false">
+                            <div class="ribbon-wrapper">
+							<!-- <div class="corner-ribbon">New</div> -->
+                            <img class="img-responsive" src="/MBPromoImages/Website_Assets/homefragrancev2.jpg" alt="Home fragrances guide" >
+							</div>
+                            <div class="caption">
+                                <h4>IN THE KNOW</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36"></span><span class="fs-36 know"></span></div>
+                                <p>
+									<span style="padding-top: 0" class="store-link">Home fragrance<br/> buying guide</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+
+                </div>
+				<!--End thumbnail content -->
+      </div>
+    </div>
+  </div>
+  <!--In the Know-->
+  <div class="panel panel-default">
+    <div class="panel-heading visible-xs">
+      <h4 class="panel-title collapsed"  data-toggle="collapse" data-parent="#accordion" data-target="#know">
+        <a class="accordion-toggle">
+			<span class="fs-36 know accord-head"></span><i>In the know</i>
+        </a>
+      </h4>
+    </div>
+    <div id="know" class="panel-collapse collapse">
+      <div class="panel-body">
+		<h2 class="line hidden-xs"><i>In the know</i></h2>
+			<!--start thumbnail content -->
+            <div class="row">
+            					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/features/newsroom/john-lewis-exclusive" manual_cm_sp="Features-_-Trending-_-BTBPearHoney" data-ajax="false">
+                            <div class="ribbon-wrapper">
+							<div class="corner-ribbon">New</div>
+                            <img class="img-responsive" src="/MBPromoImages/Website_Assets/thumbv3.jpg" alt="John Lewis Exclusive" >
+							</div>
+                            <div class="caption">
+                                <h4>IN THE KNOW: NEWS</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36"></span><span class="newsroom"></span></div>
+                                <p>
+									<span style="padding-top: 0"class="store-link">Exclusive John Lewis<br/> preview</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/features/gift-wrapping-services/" manual_cm_sp="Features-_-InTheKnow-_-GiftWrapping" data-ajax="false">
+                            <div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/concierge.jpg" alt="Complimentary Gift Wrapping" >
+							</div>
+                            <div class="caption">
+                                <h4>In the know</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 know"></span></div>
+                                <p>
+									<span class="store-link two-line">Complimentary Gift<br/> Wrapping</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/summer-scents/" manual_cm_sp="Features-_-Trending-_-SummerScents" data-ajax="false">
+                            <div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/summer.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>In the know</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 know"></span></div>
+                                <p>
+									<span class="store-link two-line">Bring summer scents<br/> into your home</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+					
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/summer-skin-care-routine/" manual_cm_sp="Features-_-InTheKnow-_-SummerSkinCare" data-ajax="false">
+                            <div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/gingerlily.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>In the know</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 know"></span></div>
+                                <p>
+									<span class="store-link">Get summer-ready skin</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+					
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/mens/body-care/" manual_cm_sp="Features-_-InTheKnow-_-MenBodyCare" data-ajax="false">
+                            <div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Website_Assets/bodycare.jpg" alt="Men's body care guide" >
+							</div>
+                            <div class="caption">
+                                <h4>In the know</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 know"></span></div>
+                                <p>
+									<span class="store-link">Men's body care guide</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/molton-brown-home-fragrance/" manual_cm_sp="Features-_-Trending-_-BTBVanillaViolet" data-ajax="false">
+                            <div class="ribbon-wrapper">
+							<!--<div class="corner-ribbon">New</div>-->
+                            <img class="img-responsive" src="/MBPromoImages/Website_Assets/homefragrancev2.jpg" alt="A guide to our fragrances" >
+							</div>
+                            <div class="caption">
+                                <h4>IN THE KNOW</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36"></span><span class="fs-36 know"></span></div>
+                                <p>
+									<span style="padding-top: 0" class="store-link">Home fragrance<br/> buying guide</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+					
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/mens-grooming-routine/" manual_cm_sp="Features-_-InTheKnow-_-MenSkinCare" data-ajax="false">
+                            <div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/skin-care.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Men's skin care</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 know"></span></div>
+                                <p>
+									<span class="store-link">Men's skin care guide</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+					
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/spring-scents/" manual_cm_sp="Features-_-InTheKnow-_-SpringScents" data-ajax="false">
+                            <div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/spring.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>In the know</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 know"></span></div>
+                                <p>
+									<span class="store-link two-line">Bring spring scents<br/> into your home</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+					
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/how-to-make-a-bouquet-of-flowers/" manual_cm_sp="Features-_-InTheKnow-_-Bouquet" data-ajax="false">
+                            <div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/bouquet.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>In the know</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 know"></span></div>
+                                <p>
+									<span class="store-link">Make a beautiful bouquet</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+					
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/new-eau-de-toilette-collection/" manual_cm_sp="Features-_-InTheKnow-_-EDTeducation" data-ajax="false">
+                            <div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/edt2.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>The Eau de Toilette Collection</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 know"></span></div>
+                                <p>
+									<span class="store-link">A guide to our fragrances</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+					
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/alba-white-truffle-hand-care-collection/" manual_cm_sp="Features-_-InTheKnow-_-HandCareRoutine" data-ajax="false">
+                            <div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/hand-care.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>In the know</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 know"></span></div>
+                                <p>
+									<span class="store-link">The sumptuous handcare regime</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+					
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/how-to-make-a-flower-headdress/" manual_cm_sp="Features-_-InTheKnow-_-Headdress" data-ajax="false">
+                            <div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/headdress.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>In the know</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 know"></span></div>
+                                <p>
+									<span class="store-link">Make your own headdress</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+					
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/8-reasons-to-love-Molton-Brown-hand-and-body-lotions/" manual_cm_sp="Features-_-InTheKnow-_-LotionsReasons" data-ajax="false">
+                            <div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/lotions.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>In the know</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 know"></span></div>
+                                <p>
+									<span class="store-link">8 reasons to love our lotions</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+					
+					
+
+
+			</div>
+			<!--end thumbnail content -->
+      </div>
+    </div>
+  </div>
+   <!--Collections-->
+  <div class="panel panel-default">
+    <div class="panel-heading visible-xs">
+      <h4 class="panel-title collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collections">
+        <a class="accordion-toggle">
+			<span class="fs-36 collections accord-head"></span><i>Collections</i>   
+        </a>
+      </h4>
+    </div>
+    <div id="collections" class="panel-collapse collapse">
+      <div class="panel-body">
+        <h2 class="line hidden-xs"><i>Collections</i></h2>
+	  <!--start thumbnail content -->
+            <div class="row">
+				<div class="col-sm-4 col-lg-4 col-md-4">
+							<div class="thumbnail">
+							<a href="/store/features/behind-the-fragrance/orange-bergamot" manual_cm_sp="Features-_-Trending-_-orangeandbergamot" data-ajax="false">
+								<div class="ribbon-wrapper">
+								
+								<div class="corner-ribbon">New</div>
+								<img class="img-responsive" src="/MBPromoImages/Website_Assets/orangeandbergamotv2.jpg" alt="Orange and Bergamot" >
+								</div>
+								<div class="caption">
+									<h4>ORANGE & BERGAMOT</h4>
+								</div>
+								<div class="ratings">
+									<div class="pull-right"><span class="fs-36"></span><span class="fs-36 collections"></span></div>
+									<p>
+										<span class="store-link">Behind the Fragrance</span>
+									</p>
+								</div>
+								</a>
+							</div>
+					</div>
+					
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/features/behind-the-blend/comice-pear-wild-honey" manual_cm_sp="Features-_-Trending-_-BTBPearHoney" data-ajax="false">
+                            <div class="ribbon-wrapper">
+							
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/pear-honey.jpg" alt="Go behind the blend of Rosa Absolute" >
+							</div>
+                            <div class="caption">
+                                <h4>Comice Pear &amp; Wild Honey</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36"></span><span class="fs-36 collections"></span></div>
+                                <p>
+									<span class="store-link">Behind the blend</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+					
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/features/behind-the-blend/rhubarb-rose" manual_cm_sp="Features-_-Collections-_-BTBRhubarbRose" data-ajax="false">
+                            <div class="ribbon-wrapper">
+							
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/rhubarb-rose.jpg" alt="Go behind the blend of Rosa Absolute" >
+							</div>
+                            <div class="caption">
+                                <h4>Delicious Rhubarb &amp; Rose</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 collections"></span></div>
+                                <p>
+									<span class="store-link">Behind the blend</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+					
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/features/behind-the-blend/vanilla-violet/" manual_cm_sp="Features-_-Trending-_-BTBVanillaViolet" data-ajax="false">
+                            <div class="ribbon-wrapper">
+							
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/vanilla-violet.jpg" alt="Go behind the blend of Rosa Absolute" >
+							</div>
+                            <div class="caption">
+                                <h4>Vanilla &amp; Violet</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36"></span><span class="fs-36 collections"></span></div>
+                                <p>
+									<span class="store-link">Behind the blend</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+					
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/features/behind-the-blend/rosa-absolute/" manual_cm_sp="Features-_-CTA-_-RosaBTB" data-ajax="false">
+                            <div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/rosa.jpg" alt="Go behind the blend of Rosa Absolute" >
+							</div>
+                            <div class="caption">
+                                <h4>Rosa Absolute</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 collections"></span></div>
+                                <p>
+									<span class="store-link">Behind the blend</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/behind-the-blend/coco-and-sandalwood/" manual_cm_sp="Features-_-Collections-_-CocoBTB" data-ajax="false">
+                            <div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/coco.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Coco &amp; Sandalwood</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 collections"></span></div>
+                                <p>
+									<span class="store-link">Behind the blend</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+										
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/behind-the-blend/black-pepper-sport/" manual_cm_sp="Features-_-Collections-_-SportBTB" data-ajax="false">
+                            <div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/sport.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Re-charge black pepper sport</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 collections"></span></div>
+                                <p>
+									<span class="store-link">Behind the blend</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+					
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/behind-the-blend/re-charge-black-pepper/" manual_cm_sp="Features-_-Collections-_-BlackPepperBTB" data-ajax="false">
+                            <div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/black-pepper.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Re-charge black pepper</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 collections"></span></div>
+                                <p>
+									<span class="store-link">Behind the blend</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+					
+<!--
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/behind-the-blend/lily-of-the-valley-fragrance/" manual_cm_sp="Features-_-Collections-_-LilyBTB" data-ajax="false">
+                            <div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/lily.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Dewy Lily of the Valley &amp; star anise</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 collections"></span></div>
+                                <p>
+									<span class="store-link">Behind the blend</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+-->
+					
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/behind-the-blend/tobacco-absolute/" manual_cm_sp="Features-_-Collections-_-TobaccoBTB" data-ajax="false">
+                            <div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/tobacco-2017.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Tobacco Absolute</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 collections"></span></div>
+                                <p>
+									<span class="store-link">Behind the blend</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+					
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/behind-the-blend/oudh-accord-gold/" manual_cm_sp="Features-_-Collections-_-OudhBTB" data-ajax="false">
+                            <div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/gold.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Mesmerising Oudh Accord &amp; Gold</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 collections"></span></div>
+                                <p>
+									<span class="store-link">Behind the blend</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+					
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/behind-the-blend/heavenly-gingerlily/" manual_cm_sp="Features-_-Collections-_-GingerlilyBTB" data-ajax="false">
+                            <div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/gingerlily2.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Heavenly Gingerlily</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 collections"></span></div>
+                                <p>
+									<span class="store-link">Behind the blend</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+					
+					<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a href="/store/behind-the-blend/honeysuckle-white-tea/" manual_cm_sp="Features-_-Collections-_-HoneysuckleBTB" data-ajax="false">
+                            <div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/honeysuckle.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Blossoming honeysuckle &amp; white tea</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 collections"></span></div>
+                                <p>
+									<span class="store-link">Behind the blend</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+                    </div>
+
+			</div>
+			<!--end thumbnail content -->
+      </div>
+    </div>
+  </div>
+  <!--Films-->
+  <div class="panel panel-default">
+    <div class="panel-heading visible-xs">
+      <h4 class="panel-title collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#films">
+        <a class="accordion-toggle">
+          <span class="fs-36 films accord-head"></span><i>Films</i>	  
+        </a>
+      </h4>
+    </div>
+    <div id="films" class="panel-collapse collapse">
+      <div class="panel-body">
+		<h2 class="line hidden-xs"><i>Films</i></h2>
+	  <!--start thumbnail content -->
+            <div class="row">
+			
+				<div class="col-sm-4 col-lg-4 col-md-4">
+						<div class="thumbnail">
+						<a class="open-patisserie" href="#" manual_cm_sp="Features-_-Trending-_-GourmandVideo" data-ajax="false">
+							<div class="ribbon-wrapper">
+							
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/patisserie-parlour.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>The Patisserie Parlour</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36"></span><span class="fs-36 films"></div>
+                                <p>
+									<span class="store-link">Campaign film</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+				</div>
+				
+				<div class="col-sm-4 col-lg-4 col-md-4">
+						<div class="thumbnail">
+						<a id="open-rhubarb" href="#" manual_cm_sp="Features-_-Films-_-XmasFilm" data-ajax="false">
+							<div class="ribbon-wrapper">
+							
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/rhubarb-rose-video.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Rhubarb &amp; Rose</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 films"></span></div>
+                                <p>
+									<span class="store-link">Campaign film</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+				</div>
+				
+				<div class="col-sm-4 col-lg-4 col-md-4">
+						<div class="thumbnail">
+						<a id="open-pear" href="#" manual_cm_sp="Features-_-Films-_-XmasFilm" data-ajax="false">
+							<div class="ribbon-wrapper">
+							
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/pear-honey-video.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Honey &amp; Pear</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 films"></span></div>
+                                <p>
+									<span class="store-link">Campaign film</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+				</div>
+				<div class="col-sm-4 col-lg-4 col-md-4">
+						<div class="thumbnail">
+						<a id="open-violet" href="#" manual_cm_sp="Features-_-Films-_-XmasFilm" data-ajax="false">
+							<div class="ribbon-wrapper">
+							
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/vanilla-violet-video.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Vanilla &amp; Violet</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 films"></span></div>
+                                <p>
+									<span class="store-link">Campaign film</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+				</div>
+											
+				<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a id="open-xmas2016" href="#" manual_cm_sp="Features-_-Films-_-XmasFilm" data-ajax="false">
+							<div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/xmas2016-film.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Christmas 2016</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 films"></span></div>
+                                <p>
+									<span class="store-link">Campaign film</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+				</div>
+				
+				<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a id="open-rosa" href="#" manual_cm_sp="Features-_-Films-_-RosaFilm" data-ajax="false">
+							<div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/film-rosa.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Rosa Absolute</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 films"></span></div>
+                                <p>
+									<span class="store-link">Campaign film</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+				</div>
+				
+				<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a id="open-xmas2015" href="#" manual_cm_sp="Features-_-Films-_-Xmas15Film" data-ajax="false">
+							<div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/film-xmas2015.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Christmas 2015</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 films"></span></div>
+                                <p>
+									<span class="store-link">Campaign film</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+					</div>
+				
+				<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a id="open-tobacco" href="#" manual_cm_sp="Features-_-Films-_-TobaccoFilm" data-ajax="false">
+							<div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/film-tobacco.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Tobacco Absolute</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 films"></span></div>
+                                <p>
+									<span class="store-link">Campaign film</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+					</div>
+				
+				<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+                        <a id="open-gingerlily" href="#" manual_cm_sp="Features-_-Films-_-GingerlilyFilm" data-ajax="false">
+							<div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/film-gingerlily.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Heavenly Gingerlily</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 films"></span></div>
+                                <p>
+									<span class="store-link">Campaign film</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+					</div>
+				
+				<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a id="open-honeysuckle" href="#" manual_cm_sp="Features-_-Films-_-HoneysuckleFilm" data-ajax="false">
+							<div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/film-honeysuckle.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Blossoming Honeysuckle &amp; white tea</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 films"></span></div>
+                                <p>
+									<span class="store-link">Campaign film</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+					</div>
+				
+				<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a id="open-xmas2014" href="#" manual_cm_sp="Features-_-Films-_-Xmas14Film">
+							<div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/film-xmas2014.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Christmas 2014</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 films"></span></div>
+                                <p>
+									<span class="store-link">Campaign film</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+					</div>
+				
+				<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+						<a id="open-orange" href="#" manual_cm_sp="Features-_-Films-_-OBfilm" data-ajax="false">
+							<div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/film-orange.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Orange &amp; Bergamot</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 films"></span></div>
+                                <p>
+									<span class="store-link">Campaign film</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+					</div>
+				
+				<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+							<a id="open-bare" href="#" manual_cm_sp="Features-_-Films-_-BareAllFilm" data-ajax="false">
+							<div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/film-bare.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Mr Black &amp; Mrs Pink Pepper</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 films"></span></div>
+                                <p>
+									<span class="store-link">Campaign film</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+					</div>
+
+
+			</div>
+			<!--end thumbnail content -->
+      </div>
+    </div>
+  </div>
+  <!--London Via-->
+  <div class="panel panel-default">
+    <div class="panel-heading visible-xs">
+      <h4 class="panel-title collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#londonvia">
+        <a class="accordion-toggle">
+          <span class="fs-36 londonvia accord-head"></span><i>London via the world</i>	   
+        </a>
+      </h4>
+    </div>
+    <div id="londonvia" class="panel-collapse collapse">
+      <div class="panel-body">
+        <h2 class="line hidden-xs"><i>London via the world</i></h2>
+	  <!--start thumbnail content -->
+            <div class="row">
+						
+<!--
+				<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+							<a href="/store/explore-the-story/lily-of-the-valley-flower/" manual_cm_sp="Features-_-LondonVia-_-Cornwall" data-ajax="false">
+							<div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/cornwall.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Dewy lily of the Valley &amp; Star Anise</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 londonvia"></span></div>
+                                <p>
+									<span class="store-link">London via Cornwall</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+					</div>
+-->
+				
+				<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+							<a href="/store/explore-the-story/london-via-assam/" manual_cm_sp="Features-_-LondonVia-_-Assam" data-ajax="false">
+							<div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/assam.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Mesmerising oudh accord &amp; Gold</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 londonvia"></span></div>
+                                <p>
+									<span class="store-link">London via Assam</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+					</div>
+				
+				<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+							<a href="/store/explore-the-story/london-via-tahiti/" manual_cm_sp="Features-_-LondonVia-_-Tahiti" data-ajax="false">
+							<div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/taihiti.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Heavenly Gingerlily</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 londonvia"></span></div>
+                                <p>
+									<span class="store-link">London via Taihiti</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+					</div>
+				
+				<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+							<a href="/store/explore-the-story/london-via-sichuan/" manual_cm_sp="Features-_-LondonVia-_-Sichuan" data-ajax="false">
+							<div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/sichuan.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Blossoming honeysuckle &amp; white tea</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 londonvia"></span></div>
+                                <p>
+									<span class="store-link">London via Sichuan</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+					</div>
+
+
+			</div>
+			<!--end thumbnail content -->
+      </div>
+    </div>
+  </div>
+  <!--Travel-->
+  <div class="panel panel-default">
+    <div class="panel-heading visible-xs">
+      <h4 class="panel-title collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#travel">
+        <a class="accordion-toggle">
+          <span class="fs-36 travel accord-head"></span><i>Travel</i>	
+        </a>
+      </h4>
+    </div>
+    <div id="travel" class="panel-collapse collapse">
+      <div class="panel-body">
+        <h2 class="line hidden-xs"><i>Travel</i></h2>
+	  <!--start thumbnail content -->
+            <div class="row">
+
+				<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+							<a href="/store/travel-guide/philippines/" manual_cm_sp="Features-_-Travel-_-Philippines" data-ajax="false">
+							<div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/philippines-travel.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Travel</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 travel"></span></div>
+                                <p>
+									<span class="store-link">The Philippines travel guide</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+					</div>
+
+				<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+							<a href="/store/travel-guide/places-to-visit-yorkshire/" manual_cm_sp="Features-_-Travel-_-Yorkshire" data-ajax="false">
+							<div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/yorkshire-travel.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Travel</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 travel"></span></div>
+                                <p>
+									<span class="store-link">Yorkshire travel guide</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+					</div>
+
+				<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+							<a href="/store/travel-guide/places-to-visit-cornwall/" manual_cm_sp="Features-_-Travel-_-Cornwall" data-ajax="false">
+							<div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/cornwall-travel.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Travel</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 travel"></span></div>
+                                <p>
+									<span class="store-link">Cornwall travel guide</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+					</div>
+				
+				<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+							<a href="/store/whisk-you-away/" manual_cm_sp="Features-_-Travel-_-WhiskAway" data-ajax="false">
+							<div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/whisk-travel.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Travel</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 travel"></span></div>
+                                <p>
+									<span class="store-link">Let us whisk you away</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+					</div>
+				
+				<div class="col-sm-4 col-lg-4 col-md-4">
+                        <div class="thumbnail">
+							<a href="/store/tahiti-travel-guide/" manual_cm_sp="Features-_-Travel-_-Tahiti" data-ajax="false">
+							<div class="ribbon-wrapper">
+                            <img class="img-responsive" src="/MBPromoImages/Microsites/Features/taihiti-travel.jpg" alt="" >
+							</div>
+                            <div class="caption">
+                                <h4>Travel</h4>
+                            </div>
+                            <div class="ratings">
+                                <div class="pull-right"><span class="fs-36 travel"></span></div>
+                                <p>
+									<span class="store-link">Taihiti travel guide</span>
+                                </p>
+                            </div>
+							</a>
+                        </div>
+					</div>
+				
+			</div>
+			<!--end thumbnail content -->
+      </div>
+    </div>
+  </div>
+</div>
+
+	<div class="overlay" id="close-video">
+    	<span>Close X</span>
+    </div>
+	
+	<div class="scroll">
+		<i></i>
+		<span>top</span>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+	$( window).load(function(){
+		//This expands the control for ipads and desktop
+		var windowWidth = $(window).width();
+		if(windowWidth > 500) { //for iPad & desktop
+		  $('.panel-collapse:not(".in")').collapse('show');		
+		}
+		else {
+			//This will open on anchors tags for mobile and default to trending		
+			if(location.hash != null && location.hash != ""){
+
+				var url = document.location.toString();
+				if ( url.match('#') ) {
+					$('#'+url.split('#')[1]).addClass('in');
+					var cPanelBody = $('#'+url.split('#')[1]);
+					var cPanelHeading = cPanelBody.prev();
+					cPanelHeading.find( ".panel-title" ).removeClass('collapsed');
+					//scroll to the correct location in mobile
+					$('html, body').animate({scrollTop:$(location.hash).position().top});
+				}
+
+			}
+			else {
+				$('#trending').addClass('in');
+				$('#trending').prev().find( ".panel-title" ).removeClass( 'collapsed');
+			}
+		}
+						
+    });
+
+
+	$(document).ready(function(){
+				
+	// Scroll to the top
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 600) {
+				$('.scroll').fadeIn();
+			} else {
+				$('.scroll').fadeOut();
+			}
+		});
+		$('.scroll').click(function () {
+			$("html, body").animate({
+				scrollTop: 0
+			}, 600);
+			return false;
+		});
+		
+		//When you click on accordion this will scroll to the top of the section
+		$('#accordion').on('shown.bs.collapse', '.panel-default', function (e) {	
+			var windowWidth = $(window).width();
+			if(windowWidth < 500) {
+				$('html,body').animate({
+					scrollTop: $(this).offset().top
+				}, 500); 
+			}
+		});
+		
+		/*$('#accordion').on('shown.bs.collapse', '.panel-default', function (e) {
+			$('html,body').animate({
+				scrollTop: $(this).offset().top
+			}, 500); 
+		});*/
+
+		//For Desktop and Ipads will navigate to anchor
+		$('#accordion').on('shown.bs.collapse', function () {
+			var windowWidth = $(window).width();
+			
+			if(windowWidth > 500) {
+				var hash = window.location.hash;
+				if(hash!="") {
+					$('html, body').animate({scrollTop:$(hash).position().top});
+				}		
+			}		
+		}); 		
+				
+	//Desktop Navigation
+		$('#features-hub ul li a').click(function(){
+				$('html, body').animate({
+					scrollTop: $( $.attr(this, 'href') ).offset().top
+				}, 600);
+				return false;
+		});
+		
+	// video start
+	$('#open-video').click(function(e){
+		$("#video").remove();
+		$(".overlay").addClass("active");
+		$(".overlay").prepend( "<iframe class='video-iframe' width='80%' height='80%' src='//youtube.com/embed/1DbuyqRS78I?modestbranding=1&rel=0&showinfo=0&color=white&wmode=opaque&autoplay=1' id='video' frameborder='0' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>" );
+		e.preventDefault();
+		history.pushState('', '', '?video=open');
+	});
+				
+	$('#open-tobacco').click(function(e){
+		$("#video").remove();
+		$(".overlay").addClass("active");
+		$(".overlay").prepend( "<iframe class='video-iframe' width='80%' height='80%' src='//www.youtube.com/embed/f-zaU9RVZic?modestbranding=1&rel=0&showinfo=0&color=white&wmode=opaque&autoplay=1' id='video' frameborder='0' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>" );
+		e.preventDefault();
+		history.pushState('', '', '?video=open');
+	});
+	
+	$('#open-gingerlily').click(function(e){
+		$("#video").remove();
+		$(".overlay").addClass("active");
+		$(".overlay").prepend( "<iframe class='video-iframe' width='80%' height='80%' src='//www.youtube.com/embed/cwiUl61U7T4?modestbranding=1&rel=0&showinfo=0&color=white&wmode=opaque&autoplay=1' id='video' frameborder='0' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>" );
+		e.preventDefault();
+		history.pushState('', '', '?video=open');
+	});
+	
+	$('#open-rhubarb').click(function(e){
+		$("#video").remove();
+		$(".overlay").addClass("active");
+		$(".overlay").prepend( "<iframe class='video-iframe' width='80%' height='80%' src='//www.youtube.com/embed/2--h77PXxRo?modestbranding=1&rel=0&showinfo=0&color=white&wmode=opaque&autoplay=1' id='video' frameborder='0' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>" );
+		e.preventDefault();
+		history.pushState('', '', '?video=open');
+	});
+	
+	$('#open-honeysuckle').click(function(e){
+		$("#video").remove();
+		$(".overlay").addClass("active");
+		$(".overlay").prepend( "<iframe class='video-iframe' width='80%' height='80%' src='//www.youtube.com/embed/XBMjYKww7dQ?modestbranding=1&rel=0&showinfo=0&color=white&wmode=opaque&autoplay=1' id='video' frameborder='0' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>" );
+		e.preventDefault();
+		history.pushState('', '', '?video=open');
+	});
+		
+	$('#open-xmas2015').click(function(e){
+		$("#video").remove();
+		$(".overlay").addClass("active");
+		$(".overlay").prepend( "<iframe class='video-iframe' width='80%' height='80%' src='//www.youtube.com/embed/4gWU1Tjo-cs?modestbranding=1&rel=0&showinfo=0&color=white&wmode=opaque&autoplay=1' id='video' frameborder='0' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>" );
+		e.preventDefault();
+		history.pushState('', '', '?video=open');
+	});
+	
+	$('#open-xmas2014').click(function(e){
+		$("#video").remove();
+		$(".overlay").addClass("active");
+		$(".overlay").prepend( "<iframe class='video-iframe' width='80%' height='80%' src='//www.youtube.com/embed/LXqkznUUgUw?modestbranding=1&rel=0&showinfo=0&color=white&wmode=opaque&autoplay=1' id='video' frameborder='0' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>" );
+		e.preventDefault();
+		history.pushState('', '', '?video=open');
+	});
+		
+	$('#open-orange').click(function(e){
+		$("#video").remove();
+		$(".overlay").addClass("active");
+		$(".overlay").prepend( "<iframe class='video-iframe' width='80%' height='80%' src='//www.youtube.com/embed/WYiJ7EkshXs?modestbranding=1&rel=0&showinfo=0&color=white&wmode=opaque&autoplay=1' id='video' frameborder='0' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>" );
+		e.preventDefault();
+		history.pushState('', '', '?video=open');
+	});
+		
+	$('#open-bare').click(function(e){
+		$("#video").remove();
+		$(".overlay").addClass("active");
+		$(".overlay").prepend( "<iframe class='video-iframe' width='80%' height='80%' src='//www.youtube.com/embed/B-387Gvym68?modestbranding=1&rel=0&showinfo=0&color=white&wmode=opaque&autoplay=1' id='video' frameborder='0' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>" );
+		e.preventDefault();
+		history.pushState('', '', '?video=open');
+	});
+	
+	$('#open-rosa').click(function(e){
+		$("#video").remove();
+		$(".overlay").addClass("active");
+		$(".overlay").prepend( "<iframe class='video-iframe' width='80%' height='80%' src='//youtube.com/embed/jbRKMCub29k?modestbranding=1&rel=0&showinfo=0&color=white&wmode=opaque&autoplay=1' id='video' frameborder='0' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>" );
+		e.preventDefault();
+		history.pushState('', '', '?video=open');
+	});
+	
+	$('#open-xmas2016').click(function(e){
+		$("#video").remove();
+		$(".overlay").addClass("active");
+		$(".overlay").prepend( "<iframe class='video-iframe' width='80%' height='80%' src='//youtube.com/embed/nwLnAfeykIw?modestbranding=1&rel=0&showinfo=0&color=white&wmode=opaque&autoplay=1' id='video' frameborder='0' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>" );
+		e.preventDefault();
+		history.pushState('', '', '?video=open');
+	});
+	
+	$('.open-patisserie').click(function(e){
+		$("#video").remove();
+		$(".overlay").addClass("active");
+		$(".overlay").prepend( "<iframe class='video-iframe' width='80%' height='80%' src='//youtube.com/embed/M0bLzTyEGL0?modestbranding=1&rel=0&showinfo=0&color=white&wmode=opaque&autoplay=1' id='video' frameborder='0' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>" );
+		e.preventDefault();
+		history.pushState('', '', '?video=open');
+	});
+	
+	$('#open-rhubarb').click(function(e){
+		$("#video").remove();
+		$(".overlay").addClass("active");
+		$(".overlay").prepend( "<iframe class='video-iframe' width='80%' height='80%' src='//youtube.com/embed/fwMiLIEN0d4?modestbranding=1&rel=0&showinfo=0&color=white&wmode=opaque&autoplay=1' id='video' frameborder='0' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>" );
+		e.preventDefault();
+		history.pushState('', '', '?video=open');
+	});
+	
+	$('#open-pear').click(function(e){
+		$("#video").remove();
+		$(".overlay").addClass("active");
+		$(".overlay").prepend( "<iframe class='video-iframe' width='80%' height='80%' src='//youtube.com/embed/g0dbj94r2Yg?modestbranding=1&rel=0&showinfo=0&color=white&wmode=opaque&autoplay=1' id='video' frameborder='0' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>" );
+		e.preventDefault();
+		history.pushState('', '', '?video=open');
+	});
+	
+	$('#open-violet').click(function(e){
+		$("#video").remove();
+		$(".overlay").addClass("active");
+		$(".overlay").prepend( "<iframe class='video-iframe' width='80%' height='80%' src='//youtube.com/embed/0JNrH7qrpu8?modestbranding=1&rel=0&showinfo=0&color=white&wmode=opaque&autoplay=1' id='video' frameborder='0' allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>" );
+		e.preventDefault();
+		history.pushState('', '', '?video=open');
+	});
+		
+	$('#close-video').click(function(e){
+		$("#video").remove();
+		$(".overlay").removeClass("active");
+		e.preventDefault();
+		history.pushState('','', window.location.protocol + '//' + window.location.host + window.location.pathname);
+	});
+	//video end
+			
+	});
+</script>	
