@@ -1,94 +1,84 @@
 .section8 {
-		position: relative;
-		background: url("MBPromoImages/Website_Assets/into-the-uncharted/09_The-Collection_Desktop.jpg") 50% 50% no-repeat;
-		background-size: cover;
-	    // background-attachment: fixed;
-	    background-position: center center; 
-	    height: 844px;
-
-	    h2 {
-	    font-size: 33px;
-	    color: #16577f;
-	    text-align: center;
-	    font-family: 'Trebuchet', Trebuchet MS!important;
-	    padding-top: 100px;
-	    }
-	    h3 {
-	    	font-size: 48px;
-	    	color: #fff;
-	    	text-align: center;
-
-	    }
-
-	    .s8wrap {
-	    	max-width: 648px;
-		    margin: 0 auto;
-		    position: relative;
-			.innerContent {
-	    	max-width: 325px;
-	    	margin: 0 auto;
-	    	    right: 0;
-    			top: -29px;
-    			position: absolute;
-	    	p {
-	    	max-width: 290px;
-	    	font-size: 15px;
-	    	text-align: center;
-	    	margin: 0 auto;
-	    	padding-top: 40px;
-	    	color: #012132;
-	    	line-height: 18px;
-	    	-webkit-font-smoothing: antialiased !important;
-	    	span {
-	    		text-decoration: underline;
-	    	}
-	    	a {
-	    		text-decoration: underline;
-	    		color: #012132;
-	    	}
-	    }
-	    .cta {
-	    	width: 127px;
-	    	background: #16577f;
-	    	padding: 9px;
-	    	color: #fff;
-	    	text-align: center;
-	    	margin: 0 auto;
-	    	margin-top: 30px;
-	    }
-	    }
-	    }
-
-	    
-
+    position: relative;
+    background: url("MBPromoImages/Website_Assets/into-the-uncharted/09_The-Collection_Desktop.jpg") 50% 50% no-repeat;
+    background-size: cover;
+    // background-attachment: fixed;
+    background-position: center center;
+    height: 844px;
+    h2 {
+        font-size: 33px;
+        color: #16577f;
+        text-align: center;
+        font-family: 'Trebuchet', Trebuchet MS!important;
+        padding-top: 100px;
+    }
+    h3 {
+        font-size: 48px;
+        color: #fff;
+        text-align: center;
+    }
+    .s8wrap {
+        max-width: 648px;
+        margin: 0 auto;
+        position: relative;
+        .innerContent {
+            max-width: 325px;
+            margin: 0 auto;
+            right: 0;
+            top: -29px;
+            position: absolute;
+            p {
+                max-width: 290px;
+                font-size: 15px;
+                text-align: center;
+                margin: 0 auto;
+                padding-top: 40px;
+                color: #012132;
+                line-height: 18px;
+                -webkit-font-smoothing: antialiased !important;
+                span {
+                    text-decoration: underline;
+                }
+                a {
+                    text-decoration: underline;
+                    color: #012132;
+                }
+            }
+            .cta {
+                width: 127px;
+                background: #16577f;
+                padding: 9px;
+                color: #fff;
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 30px;
+            }
+        }
+    }
 }
-
-@media only screen and (min-width: 0px) and (max-width : 767px) {
-	.section8 {
-		background: url("MBPromoImages/Website_Assets/into-the-uncharted/09_The-Collection_Mobile.jpg")50% 50% no-repeat;
-		height: 660px;
-		background-position: center center; 
-	    background-size: cover;
-
-		h2 {
-			padding-top: 50px;
-		}
-
-		.s8wrap { 
-			max-width: 100%;
-
-			.innerContent {
-			max-width: 100%;
-			position: relative;
-			top: 0;
-
-			p {
-				padding-top: 30px;
-				max-width: 230px;
-				color: #000;
-			}
-			}
-		}
-
-	}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    .section8 {
+        background: url("MBPromoImages/Website_Assets/into-the-uncharted/09_The-Collection_Mobile.jpg")50% 50% no-repeat;
+        height: 660px;
+        background-position: center center;
+        background-size: cover;
+        h2 {
+            margin: 0;
+            padding: 0;
+            padding-top: 50px;
+        }
+        .s8wrap {
+            max-width: 100%;
+            .innerContent {
+                max-width: 100%;
+                position: relative;
+                top: 0;
+                p {
+                    padding-top: 30px;
+                    max-width: 230px;
+                    color: #000;
+                }
+            }
+        }
+    }
 }
