@@ -68,6 +68,7 @@
     .section4 {
         height: 820px;
         background-position: -1280px;
+        background-size: inherit;
         h2 {
             font-size: 18px;
             color: #fff;
@@ -94,9 +95,16 @@
                 padding: 42px;
                 p {
                     font-size: 20px;
+                    margin:0;
+                    &:before {
+                        top: -3px;
+                        left: -26px;
+                        background-size: 50%;
+                    }
                 }
                 p:last-child {
                     padding-top: 10px;
+                    margin:0;
                 }
             }
             .section4Video {

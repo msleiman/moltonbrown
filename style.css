@@ -459,6 +459,10 @@
   display: none; }
   .uncharted-wrap .mobilenav .open, .uncharted-wrap .mobilenav .closenav {
     display: none; }
+  .uncharted-wrap .mobilenav .open {
+    line-height: 17px; }
+  .uncharted-wrap .mobilenav .closenav {
+    line-height: 31px; }
 
 .uncharted-wrap .fixednav {
   position: fixed !important;
@@ -476,8 +480,12 @@
     display: none;
     font-size: 20px;
     color: black; }
+    .uncharted-wrap .mininav ul {
+      padding-top: 40px;
+      width: 66%; }
     .uncharted-wrap .mininav li {
-      display: block; }
+      display: block;
+      border-bottom: 1px solid #fff; }
   .uncharted-wrap .mobilenav {
     position: fixed;
     right: 20px;
@@ -756,7 +764,8 @@
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .uncharted-wrap .section4 {
     height: 820px;
-    background-position: -1280px; }
+    background-position: -1280px;
+    background-size: inherit; }
     .uncharted-wrap .section4 h2 {
       font-size: 18px;
       color: #fff;
@@ -780,9 +789,15 @@
         text-align: center;
         padding: 42px; }
         .uncharted-wrap .section4 .s4wrap .innerContent p {
-          font-size: 20px; }
+          font-size: 20px;
+          margin: 0; }
+          .uncharted-wrap .section4 .s4wrap .innerContent p:before {
+            top: -3px;
+            left: -26px;
+            background-size: 50%; }
         .uncharted-wrap .section4 .s4wrap .innerContent p:last-child {
-          padding-top: 10px; }
+          padding-top: 10px;
+          margin: 0; }
       .uncharted-wrap .section4 .s4wrap .section4Video {
         padding-top: 0; }
         .uncharted-wrap .section4 .s4wrap .section4Video img {
@@ -881,6 +896,10 @@
           margin: 0 auto;
           padding-top: 40px;
           padding-bottom: 10px; }
+          .uncharted-wrap .section5 .s4wrap .innerContent p:before {
+            top: -3px;
+            left: -26px;
+            background-size: 50%; }
         .uncharted-wrap .section5 .s4wrap .innerContent p:last-child {
           padding-top: 10px;
           width: 208px; }
@@ -894,31 +913,33 @@
   position: relative;
   background: url("MBPromoImages/Website_Assets/into-the-uncharted/07_Immerse-Yourself.jpg") 50% 50% no-repeat;
   background-size: cover;
-  background-position: center center;
-  height: 844px; }
+  height: 848px; }
   .uncharted-wrap .section6 h2 {
-    font-size: 34px;
+    font-size: 48px;
     color: #fff;
     text-align: center;
     font-family: "Trebuchet", Trebuchet MS !important;
     padding-top: 50px; }
   .uncharted-wrap .section6 h3 {
-    font-size: 18px;
+    font-size: 25px;
     color: #fff;
     text-align: center; }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .uncharted-wrap .section6 h2 {
-    font-size: 34px;
-    color: #fff;
-    padding-top: 25px;
-    margin: 0; }
-  .uncharted-wrap .section6 h3 {
-    font-size: 18px;
-    color: #fff;
-    text-align: center;
-    margin: 0;
-    padding: 0; } }
+  .uncharted-wrap .section6 {
+    height: 575px;
+    background-position: -207px; }
+    .uncharted-wrap .section6 h2 {
+      font-size: 34px;
+      color: #fff;
+      padding-top: 25px;
+      margin: 0; }
+    .uncharted-wrap .section6 h3 {
+      font-size: 18px;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+      padding: 0; } }
 
 .uncharted-wrap .section7 {
   position: relative;
@@ -943,10 +964,6 @@
     position: relative;
     height: 695px;
     padding-top: 16px; }
-    .uncharted-wrap .section7 .s7wrap img:hover {
-      transform: scale(1.1);
-      -ms-transform: scale(1.1);
-      -webkit-transform: scale(1.1); }
     .uncharted-wrap .section7 .s7wrap .innerContent {
       max-width: 500px;
       background-color: rgba(6, 22, 32, 0.9);
@@ -1055,7 +1072,7 @@
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .uncharted-wrap .section7 {
-    height: 1284px; }
+    height: 1205px; }
     .uncharted-wrap .section7 h2 {
       font-size: 18px;
       color: #fff;
@@ -1092,8 +1109,8 @@
           .uncharted-wrap .section7 .s7wrap .innerContent li:nth-child(4) {
             width: 66%; }
       .uncharted-wrap .section7 .s7wrap .carousel {
-        width: 279px;
-        margin-left: -21px;
+        width: 280px;
+        margin-left: -20px;
         top: 30px; }
         .uncharted-wrap .section7 .s7wrap .carousel .carousel-slide1, .uncharted-wrap .section7 .s7wrap .carousel .carousel-slide2, .uncharted-wrap .section7 .s7wrap .carousel .carousel-slide3, .uncharted-wrap .section7 .s7wrap .carousel .carousel-slide4, .uncharted-wrap .section7 .s7wrap .carousel .carousel-slide5, .uncharted-wrap .section7 .s7wrap .carousel .carousel-slide6 {
           position: inherit;

@@ -24,11 +24,7 @@
         position: relative;
         height: 695px;
         padding-top: 16px;
-        img:hover {
-            transform: scale(1.1);
-            -ms-transform: scale(1.1);
-            -webkit-transform: scale(1.1);
-        }
+
         .innerContent {
             max-width: 500px;
             background-color: rgba(6, 22, 32, 0.9);
@@ -158,7 +154,7 @@
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
     .section7 {
-        height: 1284px;
+        height: 1205px;
         h2 {
             font-size: 18px;
             color: #fff;
@@ -166,7 +162,6 @@
             font-family: 'Trebuchet', Trebuchet MS!important;
             padding-top: 25px;
             margin: 0;
-
         }
         h3 {
             font-size: 34px;
@@ -204,8 +199,8 @@
                 }
             }
             .carousel {
-                width: 279px;
-                margin-left: -21px;
+                width: 280px;
+                margin-left: -20px;
                 top: 30px;
                 .carousel-slide1, .carousel-slide2, .carousel-slide3, .carousel-slide4, .carousel-slide5, .carousel-slide6 {
                     position: inherit;

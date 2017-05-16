@@ -50,6 +50,8 @@
 					<li><a href="#alastairadvanture">ALASTAIR’S ADVENTURE</a></li>
 					<li><a href="#immerseYourself">IMMERSE YOURSELF</a></li>
 					<li><a href="#youradventure">YOUR ADVENTURE</a></li>
+					<li class="mobonly"><a href="#shopnow">SHOP NOW</a></li>
+					
 				</ul>
 			</div>
 				<div class="col span_12_of_12 section2" id="theingredient">
@@ -172,7 +174,7 @@
 					</div>
 				</div>
 
-				<div class="col span_12_of_12 section8"> 
+				<div class="col span_12_of_12 section8" id="shopnow"> 
 					<div class="s8wrap">
 						<div class="innerContent">
 							<h2>NEW<br/> Coastal Cypress<br/> & Sea Fennel</h2>
@@ -303,7 +305,7 @@ var section2 = $('.section2').offset();
 
     $(document).ready(function() {
         if ($(window).width() < 667) {
-            $(".carousel").slick({ infinite: true, slidesToShow: 1, slidesToScroll: 1, autoplay:true });
+            $(".carousel").slick({ infinite: true, slidesToShow: 1, slidesToScroll: 1, arrows: false});
         }
 
         $(window).scroll(function(){                          

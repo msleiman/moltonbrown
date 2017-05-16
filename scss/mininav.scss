@@ -23,6 +23,13 @@
 	display: none;
 	.open, .closenav {
 		display: none;
+		    
+	}
+	.open {
+		line-height: 17px;
+	}
+	.closenav {
+	    line-height: 31px;
 	}
 
 }
@@ -44,9 +51,14 @@
 		display: none;
 		font-size: 20px;
 		color: black;
+		ul {
+			 padding-top: 40px;
+   			 width: 66%;
+		}
 
 		li {
 			display: block;
+			border-bottom: 1px solid #fff;
 		}
 
 
