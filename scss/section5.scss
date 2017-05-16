@@ -1,6 +1,6 @@
 .section5 {
 		position: relative;
-		background: url("MBPromoImages/Website_Assets/into-the-uncharted/06_Alastairs-Adventure.jpg") 50% 50% no-repeat;
+		background: url("MBPromoImages/Website_Assets/into-the-uncharted2/06_Alastairs-Adventure.jpg") 50% 50% no-repeat;
 		background-size: cover;
 	    // background-attachment: fixed;
 	    background-position: center center; 
@@ -46,7 +46,7 @@
 
 
 							&:before {
-			    	    	background: url("MBPromoImages/Website_Assets/into-the-uncharted/quote.png") 100% no-repeat;
+			    	    	background: url("MBPromoImages/Website_Assets/into-the-uncharted2/quote.png") 100% no-repeat;
 							content: url('');
 					    	top: 3px;
 							left: 30px;
@@ -69,6 +69,9 @@
 								}
 								span.underline {
 									text-decoration: underline;
+									a {
+										color: #fff;
+									}
 								}
 							}
 						}
