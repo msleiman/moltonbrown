@@ -15,9 +15,9 @@
 	 -webkit-font-smoothing: antialiased !important;
 }
 
-.mobonly {display: none!important;}
-.deskonly {display: block!important}
+.mobonly, .mobile {display: none!important;}
+.deskonly, .desk {display: block!important}
 @media only screen and (min-width: 0px) and (max-width : 767px) { 
-.mobonly {display: block!important;}
-.deskonly {display: none!important}
+.mobonly, .mobile {display: block!important;}
+.deskonly, .desk {display: none!important}
 }

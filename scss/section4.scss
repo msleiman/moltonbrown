@@ -39,7 +39,7 @@
                 line-height: 25px;
                 &:before {
                     background: url("MBPromoImages/Website_Assets/into-the-uncharted2/quote.png") 100% no-repeat;
-                    content: url('');
+                    content: "";
                     top: 3px;
                     left: 30px;
                     width: 100px;
@@ -63,32 +63,32 @@
                 color: #fff;
             }
         } // innercontent
-        .section4Video {
-            position: relative;
-            padding-top: 235px;
-                                .player {
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        -webkit-transform: translate(-50%, -50%);
-                        -ms-transform: translate(-50%, -50%);
-                        transform: translate(-50%, -50%);
-                        width: 70px;
-                        height: 70px;
-                        -moz-border-radius: 50px;
-                        -webkit-border-radius: 50px;
-                        border-radius: 50px;
-                        border: 3px solid #fff;
-                        cursor: pointer;
-                        img {
-                            position: absolute;
-                            width: 35px;
-                            top: 10px;
-                            left: 16px;;
+.section4Video {
+    position: relative;
+    padding-top: 235px;
+                        .player {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                width: 70px;
+                height: 70px;
+                -moz-border-radius: 50px;
+                -webkit-border-radius: 50px;
+                border-radius: 50px;
+                border: 3px solid #fff;
+                cursor: pointer;
+                img {
+                    position: absolute;
+                    width: 35px;
+                    top: 10px;
+                    left: 16px;;
 
-                        }
-                    }
-        }
+                }
+            }
+}
     }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -103,6 +103,7 @@
             font-family: 'Trebuchet', Trebuchet MS!important;
             padding-top: 25px;
             margin: 0;
+            
         }
         h3 {
             font-size: 34px;

@@ -35,6 +35,7 @@
 				text-align: center;
 				color: #fff;
 				font-family: 'Trebuchet', Trebuchet MS!important;
+				padding-bottom: 233px;
 			// 		&:after {
 			// 		content: url('MBPromoImages/Website_Assets/into-the-uncharted/dive-in.png');
 			// 		display: block;
@@ -43,7 +44,20 @@
 
 			}
 			.divein-logo {
-				padding-top: 233px;
+			-webkit-border-radius:100%;
+			-moz-border-radius:100%;
+			-ms-border-radius:100%;
+			border-radius:100%;
+			border: 2px solid #fff;
+			width: 60px;
+			height: 60px;
+			position: relative;
+			margin: 0 auto;
+
+
+			img {
+				
+			}
 
 			}
 
@@ -65,29 +79,31 @@
 		background-size: cover;
     	// background-attachment: fixed;
     	background-position: 100% 100%; 
-    	min-height: 442px;
-	    height: 500px;
+    	// min-height: 442px;
+	    // height: 500px;
+	    height: 93vh;
+	    min-height: 80vh;
     	.innerContent {
     		max-width: 100%;
-    				h2 {
+		h2 {
 			width: 50%;
-			font-size:  22px;
+			font-size: 22px;
 		}
+
 		h3 {
 			font-size: 14px;
 		}
-		img {
-			display: none;
-		}
+
 		h1 {
 			width: 90%;
 			margin: 0 auto;
 			font-size: 40px;
 			padding-top: 50px;
+			padding-bottom: 50px;
 		}
 				.divein-logo {
 			display: inline-block;
-			padding-top: 50px;
+			
 			
 		}
     	}

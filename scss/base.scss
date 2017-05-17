@@ -260,55 +260,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16577f', end
 }
 
 
-/*Social Share Buttons */
-.share-footer {
-    width: 100%;
-    text-align: center;
-    height: 210px;
-    display: inline-block;
-    margin-top: -40px;
-}
 
-.share-footer i {
-        padding-top: 20px;
-    padding-bottom: 14px;
-    display: inline-block;
-    font-size: 18px;
-}
-
-        .mobile {
-            display: none;
-        }
-        .desk {
-            display: block;
-        }
-
-
-        
-        .share-footer .socials-36 {
-            background: url("http://www.moltonbrown.co.uk/MBPromoImages/Microsites/pearhoney2017/BehindBlend/social-share.png") no-repeat 0 0;
-            display: inline-block;
-            font-size: 0;
-            height: 32px;
-            vertical-align: middle;
-            width: 198px;
-        }
-        .share-footer .twitter {
-            background-position: 0 -42px;
-        }
-        .share-footer .email {
-            background-position: 0 -84px;
-        }
-        .share-footer ul {
-            margin: 7px 0;
-        }
-        .share-footer ul li {
-            display: inline-block;
-            margin-right: 10px!important;
-        }
-        .share-footer p {
-            padding-top: 3%;
-        }
 
 
                 @media only screen and (min-width: 0px) and (max-width : 767px) { 
@@ -318,43 +270,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16577f', end
         .desk {
             display: none;
         }
-
-        .share-footer {
-                margin-top: -17px;
-                height: 126px
-        }
-        .share-footer ul li {
-            padding-top: 5px;
-        }
-
-         /*Mobile: Social Share Buttons */
-            .share-footer .socials-36 {
-                background: url("http://www.moltonbrown.co.uk/MBPromoImages/Microsites/pearhoney2017/BehindBlend/social-share-m.png")no-repeat 0 0;
-                background-size: 94px;
-                display: inline-block;
-                font-size: 0;
-                vertical-align: middle;
-                width: 92px;
-            }
-    
-            
-            .share-footer .twitter {
-                background-position: 0 -32px;
-            }
-            .share-footer .email {
-                background-position: 0 -65px;
-            }
-            .share-footer ul {
-                margin: 7px 0;
-            }
-            .share-footer ul li {
-                display: inline-block;
-                margin-right: 2px!important;
-            }
-            .share-footer-wrapper {
-            text-align: center;
-            height: 97px;
-            }
         
 }
 
