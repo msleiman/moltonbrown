@@ -44,8 +44,8 @@
 					</div>
 				</div>
 				<div class="mobilenav">
-					<div class="open">MENU</div>
-					<div class="closenav">X</div>
+					<div class="open"><img src="/MBPromoImages/Website_Assets/into-the-uncharted2/menu-open.png" alt=""></div>
+					<div class="closenav"><img src="/MBPromoImages/Website_Assets/into-the-uncharted2/menu-close.png" alt=""></div>
 				</div>
 				<div class="col span_12_of_12 mininav">
 					<ul>
@@ -173,7 +173,6 @@
 							<div><img src="/MBPromoImages/Website_Assets/into-the-uncharted2/04_Collage-Images.jpg" class="carousel-slide4" alt=""></div>
 							<div><img src="/MBPromoImages/Website_Assets/into-the-uncharted2/05_Collage-Images.jpg" class="carousel-slide5" alt=""></div>
 							<div><img src="/MBPromoImages/Website_Assets/into-the-uncharted2/06_Collage-Images.jpg" class="carousel-slide6" alt=""></div>
-							
 						</div>
 						
 					</div>
@@ -188,6 +187,7 @@
 					</div>
 				</div>
 			</div>
+			
 			<div class="share-footer">
 				<p class="animated fadeIn slower"><i>Love our world?</i></p>
 				<ul class="desk">
@@ -305,7 +305,7 @@ $('.mininav').removeClass('fixednav');
 <script>
 $(document).ready(function() {
 if ($(window).width() < 667) {
-$(".carousel").slick({ infinite: true, slidesToShow: 1, slidesToScroll: 1, arrows: true});
+$(".carousel").slick({ infinite: true, slidesToShow: 1, slidesToScroll: 1, arrows: false, dots: true});
 }
 $(window).scroll(function(){
 if ($(this).scrollTop() > 200) {

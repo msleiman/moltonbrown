@@ -387,7 +387,6 @@
     min-width: 100% !important; } }
 
 .uncharted-wrap {
-  /* Dots */
   /*Social Share Buttons */ }
   .uncharted-wrap .hero {
     position: relative;
@@ -473,10 +472,6 @@
     display: none; }
     .uncharted-wrap .mobilenav .open, .uncharted-wrap .mobilenav .closenav {
       display: none; }
-    .uncharted-wrap .mobilenav .open {
-      line-height: 17px; }
-    .uncharted-wrap .mobilenav .closenav {
-      line-height: 31px; }
   .uncharted-wrap .fixednav {
     position: fixed !important;
     top: 0;
@@ -503,34 +498,23 @@
       position: fixed;
       right: 20px;
       bottom: 20px;
-      color: #fff;
-      background: #071823;
-      z-index: 9999;
-      width: 70px;
-      height: 70px;
-      -moz-border-radius: 50px;
-      -webkit-border-radius: 50px;
-      border-radius: 50px;
-      border: 2px solid #fff;
-      cursor: pointer;
-      display: none; }
+      z-index: 9999; }
       .uncharted-wrap .mobilenav .open {
         font-size: 16px;
         height: 100%;
         cursor: pointer;
         position: relative;
-        top: 26px;
+        top: 10px;
         left: 12px;
         display: block; }
       .uncharted-wrap .mobilenav .closenav {
-        display: none;
-        font-size: 29px;
+        font-size: 16px;
         height: 100%;
         cursor: pointer;
         position: relative;
-        left: 7px;
-        width: 100%;
-        padding: 18px; } }
+        top: 10px;
+        left: 12px;
+        display: none; } }
   .uncharted-wrap .section2 {
     position: relative;
     background: url("MBPromoImages/Website_Assets/into-the-uncharted2/03_The-Ingredients.jpg") 50% 50% no-repeat;
@@ -1137,62 +1121,6 @@
           top: 608px;
           right: 14px;
           width: 170px; }
-  .uncharted-wrap .slick-slider {
-    margin-bottom: 30px; }
-  .uncharted-wrap .slick-dots {
-    position: absolute;
-    bottom: -45px !important;
-    display: block;
-    width: 100%;
-    padding: 0;
-    list-style: none;
-    text-align: center; }
-  .uncharted-wrap .slick-dots li {
-    position: relative;
-    display: inline-block;
-    width: 20px !important;
-    height: 20px;
-    margin: 0 5px;
-    padding: 0;
-    cursor: pointer; }
-    .uncharted-wrap .slick-dots li:before {
-      content: "" !important; }
-  .uncharted-wrap .slick-dots li button {
-    font-size: 0;
-    line-height: 0;
-    display: block !important;
-    width: 20px !important;
-    height: 20px;
-    padding: 5px;
-    cursor: pointer;
-    color: transparent;
-    border: 0;
-    outline: none;
-    background: transparent; }
-  .uncharted-wrap .slick-dots li button:hover,
-  .uncharted-wrap .slick-dots li button:focus {
-    outline: none; }
-  .uncharted-wrap .slick-dots li button:hover:before,
-  .uncharted-wrap .slick-dots li button:focus:before {
-    opacity: 1; }
-  .uncharted-wrap .slick-dots li button:before {
-    font-family: 'slick';
-    font-size: 6px;
-    line-height: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    content: 'â€¢';
-    text-align: center;
-    opacity: .25;
-    color: black;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; }
-  .uncharted-wrap .slick-dots li.slick-active button:before {
-    opacity: .75;
-    color: black; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .uncharted-wrap .section7 {
       height: 1205px; }
@@ -1210,7 +1138,8 @@
         padding-bottom: 0;
         margin: 0; }
       .uncharted-wrap .section7 .s7wrap {
-        width: 280px; }
+        width: 280px;
+        /* Dots */ }
         .uncharted-wrap .section7 .s7wrap .innerContent {
           height: 870px;
           max-width: 280px;
@@ -1246,7 +1175,72 @@
             -webkit-transform: scale(1); }
         .uncharted-wrap .section7 .s7wrap .slick-prev,
         .uncharted-wrap .section7 .s7wrap .slick-next {
-          top: 46%; } }
+          top: 46%; }
+        .uncharted-wrap .section7 .s7wrap .slick-slider {
+          margin-bottom: 30px; }
+        .uncharted-wrap .section7 .s7wrap .slick-dots {
+          position: absolute;
+          bottom: 13px;
+          display: block;
+          width: 100%;
+          padding: 0;
+          list-style: none;
+          text-align: center;
+          cursor: pointer; }
+        .uncharted-wrap .section7 .s7wrap .slick-dots li {
+          position: relative;
+          display: inline-block;
+          width: 20px !important;
+          height: 20px;
+          margin: 0 5px;
+          padding: 0;
+          color: #fff;
+          border-radius: 10px;
+          border: 2px solid #fff;
+          cursor: pointer; }
+          .uncharted-wrap .section7 .s7wrap .slick-dots li:before {
+            content: "" !important; }
+        .uncharted-wrap .section7 .s7wrap .slick-dots li button {
+          font-size: 0;
+          line-height: 0;
+          display: block !important;
+          width: 20px !important;
+          height: 20px;
+          padding: 5px;
+          cursor: pointer;
+          color: transparent;
+          border: 0;
+          outline: none;
+          background: transparent; }
+        .uncharted-wrap .section7 .s7wrap .slick-dots li button:hover,
+        .uncharted-wrap .section7 .s7wrap .slick-dots li button:focus {
+          outline: none; }
+        .uncharted-wrap .section7 .s7wrap .slick-dots li button:hover:before,
+        .uncharted-wrap .section7 .s7wrap .slick-dots li button:focus:before {
+          opacity: 1; }
+        .uncharted-wrap .section7 .s7wrap .slick-dots li button:before {
+          font-family: 'slick';
+          font-size: 6px;
+          line-height: 20px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 20px;
+          height: 20px;
+          content: 'â€¢';
+          text-align: center;
+          opacity: .25;
+          color: black;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale; }
+        .uncharted-wrap .section7 .s7wrap .slick-dots li.slick-active button:before {
+          background: #fff;
+          opacity: 1;
+          border-radius: 10px;
+          border: none;
+          left: -2px;
+          top: -2px;
+          content: ""; } }
   .uncharted-wrap .section8 {
     position: relative;
     background: url("MBPromoImages/Website_Assets/into-the-uncharted2/09_The-Collection_Desktop.jpg") 50% 50% no-repeat;
