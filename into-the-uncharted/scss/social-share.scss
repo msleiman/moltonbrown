@@ -10,11 +10,11 @@
     display: inline-block;
     font-size: 18px;
     font-family: georgia;
-    padding-top: 50px;
+    padding-top: 25px;
 }
 
 .share-footer .socials-36 {
-            background: url("http://www.moltonbrown.co.uk/MBPromoImages/Microsites/pearhoney2017/BehindBlend/social-share.png") no-repeat 0 0;
+            background: url("/MBPromoImages/Microsites/pearhoney2017/BehindBlend/social-share.png") no-repeat 0 0;
             display: inline-block;
             font-size: 0;
             height: 32px;
@@ -46,31 +46,31 @@
         }
 
          /*Mobile: Social Share Buttons */
-            .share-footer .socials-36 {
-                background: url("http://www.moltonbrown.co.uk/MBPromoImages/Microsites/pearhoney2017/BehindBlend/social-share-m.png")no-repeat 0 0;
-                background-size: 94px;
-                display: inline-block;
-                font-size: 0;
-                vertical-align: middle;
-                width: 92px;
-            }
+.share-footer .socials-36 {
+    background: url("/MBPromoImages/Microsites/pearhoney2017/BehindBlend/social-share-m.png")no-repeat 0 0;
+    background-size: 94px;
+    display: inline-block;
+    font-size: 0;
+    vertical-align: middle;
+    width: 92px;
+}
     
             
-            .share-footer .twitter {
-                background-position: 0 -32px;
-            }
-            .share-footer .email {
-                background-position: 0 -65px;
-            }
-            .share-footer ul {
-                margin: 7px 0;
-            }
-            .share-footer ul li {
-                display: inline-block;
-                margin-right: 2px!important;
-            }
-            .share-footer-wrapper {
-            text-align: center;
-            height: 97px;
-            }
+.share-footer .twitter {
+    background-position: 0 -32px;
+}
+.share-footer .email {
+    background-position: 0 -65px;
+}
+.share-footer ul {
+    margin: 7px 0;
+}
+.share-footer ul li {
+    display: inline-block;
+    margin-right: 2px!important;
+}
+.share-footer-wrapper {
+text-align: center;
+height: 97px;
+}
 }

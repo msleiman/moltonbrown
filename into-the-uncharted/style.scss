@@ -5,7 +5,8 @@
 @import "scss/grid.scss";
 @import "scss/atgoverwrite.scss";
 .uncharted-wrap {
-
+@import "scss/preloader.scss";
+@import "scss/slick.scss";
 @import "scss/heroSection.scss";
 @import "scss/mininav.scss";
 @import "scss/section2.scss";
@@ -17,8 +18,6 @@
 @import "scss/section8.scss";
 @import "scss/social-share.scss";
 @import "scss/animation.scss"
-
-
 }
 
 

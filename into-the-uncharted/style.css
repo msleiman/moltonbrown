@@ -263,7 +263,7 @@
   margin: 0 auto; }
 
 .fs-36 {
-  background: url(http://www.moltonbrown.co.uk/MBPromoImages/Microsites/Features/features-sprite-72.png) no-repeat 0 0;
+  background: url(/MBPromoImages/Microsites/Features/features-sprite-72.png) no-repeat 0 0;
   background-size: 36px;
   display: inline-block;
   font-size: 0;
@@ -382,12 +382,189 @@
 .static_content_test .mb_page_wrapper * {
   box-sizing: inherit !important; }
 
+.mb_page_wrapper {
+  width: 100% !important; }
+
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   body {
     min-width: 100% !important; } }
 
 .uncharted-wrap {
+  /* pre-loader */
+  /* overlay */
+  /* animated content */
+  /* Slider */
   /*Social Share Buttons */ }
+  .uncharted-wrap #preloader-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#16577f+0,ffffff+100 */
+    background: #16577f;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #16577f 0%, #ffffff 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #16577f 0%, #ffffff 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #16577f 0%, #ffffff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16577f', endColorstr='#ffffff',GradientType=0 );
+    /* IE6-9 */ }
+  .uncharted-wrap #preloader-overlay .preloader {
+    background: url("/MBPromoImages/Microsites/Rosa2016/BehindBlend/preloader.png") no-repeat;
+    width: 41px;
+    height: 41px;
+    margin: -19px 0 0 -19px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-animation: spin 1.5s linear infinite;
+    -moz-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite; }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+  .uncharted-wrap .uncharted-wrap .overlay {
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    height: 100%;
+    left: 0;
+    padding: 10%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 9999; }
+  .uncharted-wrap .uncharted-wrap .overlay.active {
+    display: block; }
+  .uncharted-wrap .uncharted-wrap .overlay > span {
+    display: block;
+    font-size: 14px;
+    line-height: 32px;
+    margin: 20px auto 0 auto;
+    color: #ffffff;
+    cursor: pointer;
+    background: #464646;
+    text-align: center;
+    width: 110px; }
+  .uncharted-wrap .uncharted-wrap .overlay > span:hover {
+    background: #606060; }
+  .uncharted-wrap .uncharted-wrap .overlay > span {
+    -webkit-transition: all .4s ease-in-out .2s;
+    -moz-transition: all .4s ease-in-out .2s;
+    -ms-transition: all .4s ease-in-out .2s;
+    -o-transition: all .4s ease-in-out .2s;
+    transition: all .4s ease-in-out .2s; }
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05); }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+  .uncharted-wrap .pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse; }
+  .uncharted-wrap .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+  .uncharted-wrap .animated.infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
+  .uncharted-wrap .slick-slider {
+    position: relative;
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent; }
+  .uncharted-wrap .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0; }
+  .uncharted-wrap .slick-list:focus {
+    outline: none; }
+  .uncharted-wrap .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+  .uncharted-wrap .slick-slider .slick-track,
+  .uncharted-wrap .slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  .uncharted-wrap .slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block; }
+  .uncharted-wrap .slick-track:before,
+  .uncharted-wrap .slick-track:after {
+    display: table;
+    content: ''; }
+  .uncharted-wrap .slick-track:after {
+    clear: both; }
+  .uncharted-wrap .slick-loading .slick-track {
+    visibility: hidden; }
+  .uncharted-wrap .slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px; }
+  .uncharted-wrap [dir='rtl'] .slick-slide {
+    float: right; }
+  .uncharted-wrap .slick-slide img {
+    display: block; }
+  .uncharted-wrap .slick-slide.slick-loading img {
+    display: none; }
+  .uncharted-wrap .slick-slide.dragging img {
+    pointer-events: none; }
+  .uncharted-wrap .slick-initialized .slick-slide {
+    display: block; }
+  .uncharted-wrap .slick-loading .slick-slide {
+    visibility: hidden; }
+  .uncharted-wrap .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+  .uncharted-wrap .slick-arrow.slick-hidden {
+    display: none; }
   .uncharted-wrap .hero {
     position: relative;
     background: url("MBPromoImages/Website_Assets/into-the-uncharted2/01_Intro_Back-up-Still-Image.jpg") 50% 50% no-repeat;
@@ -470,7 +647,9 @@
       color: #fff; }
   .uncharted-wrap .mobilenav {
     display: none; }
-    .uncharted-wrap .mobilenav .open, .uncharted-wrap .mobilenav .closenav {
+    .uncharted-wrap .mobilenav .open {
+      display: none; }
+    .uncharted-wrap .mobilenav .closenav {
       display: none; }
   .uncharted-wrap .fixednav {
     position: fixed !important;
@@ -1320,9 +1499,9 @@
     display: inline-block;
     font-size: 18px;
     font-family: georgia;
-    padding-top: 50px; }
+    padding-top: 25px; }
   .uncharted-wrap .share-footer .socials-36 {
-    background: url("http://www.moltonbrown.co.uk/MBPromoImages/Microsites/pearhoney2017/BehindBlend/social-share.png") no-repeat 0 0;
+    background: url("/MBPromoImages/Microsites/pearhoney2017/BehindBlend/social-share.png") no-repeat 0 0;
     display: inline-block;
     font-size: 0;
     height: 32px;
@@ -1346,7 +1525,7 @@
       .uncharted-wrap .share-footer ul li {
         padding-top: 5px; }
       .uncharted-wrap .share-footer .socials-36 {
-        background: url("http://www.moltonbrown.co.uk/MBPromoImages/Microsites/pearhoney2017/BehindBlend/social-share-m.png") no-repeat 0 0;
+        background: url("/MBPromoImages/Microsites/pearhoney2017/BehindBlend/social-share-m.png") no-repeat 0 0;
         background-size: 94px;
         display: inline-block;
         font-size: 0;
