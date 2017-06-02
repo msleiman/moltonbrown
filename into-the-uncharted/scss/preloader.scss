@@ -1,0 +1,126 @@
+/* pre-loader */
+	
+#preloader-overlay {
+width: 100%;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 9999;
+		
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#16577f+0,ffffff+100 */
+background: #16577f; /* Old browsers */
+background: -moz-linear-gradient(top, #16577f 0%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #16577f 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #16577f 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16577f', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+}
+
+#preloader-overlay .preloader {
+    background: url("/MBPromoImages/Microsites/Rosa2016/BehindBlend/preloader.png") no-repeat;
+    width: 41px;
+    height: 41px;
+    margin: -19px 0 0 -19px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-animation: spin 1.5s linear infinite;
+    -moz-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+
+    /* overlay */
+    .uncharted-wrap .overlay {
+        background: rgba(0,0,0,0.8);
+        display: none; 
+        height: 100%;
+        left: 0;
+        padding: 10%;
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+        text-align: center;
+        z-index: 9999;  
+    }
+        .uncharted-wrap .overlay.active { 
+            display: block; 
+        }   
+        .uncharted-wrap .overlay > span { 
+            display: block;
+            font-size: 14px; 
+            line-height: 32px;              
+            margin: 20px auto 0 auto; 
+            color: #ffffff;
+            cursor: pointer;
+            background: #464646; 
+            text-align: center;             
+            width: 110px;
+        }
+            .uncharted-wrap .overlay > span:hover { 
+                background:#606060; 
+            }   
+
+    /* animated content */
+    .uncharted-wrap .overlay > span {     
+        -webkit-transition: all .4s ease-in-out .2s;
+        -moz-transition: all .4s ease-in-out .2s;
+        -ms-transition: all .4s ease-in-out .2s;
+        -o-transition: all .4s ease-in-out .2s;
+        transition: all .4s ease-in-out .2s;        
+    }
+
+    @keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
