@@ -1,0 +1,232 @@
+.code {
+  display: block;
+  background: grey;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.trebuchet {
+  font-family: Trebuchet, Trebuchet MS !important;
+}
+
+.georgia {
+  font-family: Georgia;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+.normalcase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.terms {
+  color: #848484;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 11px;
+  text-decoration: none;
+}
+// cta styles
+.cta.solid {
+  background: #000;
+  color: #fff;
+  padding: 7px 25px;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: Trebuchet, Trebuchet MS !important;
+}
+
+.cta.border {
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+  padding: 6px 33px;
+  font-size: 14px;
+  text-decoration: none;
+  border: 2px solid #000;
+}
+
+.cta.promo {
+  background: #000;
+  color: #fff;
+  padding: 6px 25px;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: Trebuchet, Trebuchet MS !important;
+}
+// colors
+.white {
+  color: #fff;
+}
+
+.black {
+  color: #000;
+}
+
+.mens-blue {
+  color: #003d6d
+}
+
+.lotv-green {
+  color: #476328
+}
+
+.botany-green {
+  color: #8aa927;
+}
+
+.pink {
+  color: #e23c70
+}
+
+.orange {
+  color: #ec6622
+}
+
+.dark-pink {
+  color: #e52162;
+}
+
+.dark-orange {
+  color: #d2472a;
+}
+.green {
+  color: #4e832c;
+}
+.sale-red {
+  color: #b6130e;
+}
+.coco-brown {
+  color: #472910;
+}
+
+.teal {
+  color: #355e67;
+}
+
+.pick-mix-mint {
+  color: #68d7be;
+}
+
+.turquoise {
+  color: #17b2b9
+}
+
+.bright-red {
+  color: #e32828;
+}
+
+.grey {
+  color: #ccc;
+}
+
+.yellow {
+  color: #f8fb06
+}
+
+// background
+
+.white-bg {
+  background: #fff;
+}
+
+.black-bg {
+  background: #000;
+}
+
+.mens-blue-bg {
+  background: #003d6d
+}
+
+.lotv-green-bg {
+  background: #476328
+}
+
+.botany-green-bg {
+  background: #8aa927;
+}
+
+.pink-bg {
+  background: #e23c70
+}
+
+.orange-bg {
+  background: #ec6622
+}
+
+.dark-pink-bg {
+  background: #e52162;
+}
+
+.dark-orange-bg {
+  background: #d2472a;
+}
+.green-bg {
+  background: #4e832c;
+}
+.sale-red-bg {
+  background: #b6130e;
+}
+.coco-brown-bg {
+  background: #472910;
+}
+
+.teal-bg {
+  background: #355e67;
+}
+
+.pick-mix-mint-bg {
+  background: #68d7be;
+}
+
+.turquoise-bg {
+  background: #17b2b9
+}
+
+.bright-red-bg {
+  background: #e32828;
+}
+
+.grey-bg {
+  background: #ccc;
+}
+
+.yellow-bg {
+  background: #f8fb06
+}
+
+// lowerBanner
+.lowerBanner {
+  width: 477px;
+  height: 310px;
+  float: left;
+  margin-top: 10px;
+  position: relative;
+  &:nth-child(odd) {
+    margin-right: 10px;
+  }
+}
+// @for $i from 1 through 100 {
+//     .fontsize-#{$i} {
+//       font-size: #{$i}px;
+//     }
+//   }

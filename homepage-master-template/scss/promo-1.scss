@@ -1,0 +1,55 @@
+// promo-1
+.promo-1 {
+  margin-top: 10px;
+  height: 310px;
+
+  h2, h3 {
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h3 {
+    top: 0;
+    left: 350px;
+    font-size: 28px;
+    padding-top: 30px;
+    font-weight: normal;
+  }
+
+  p {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  h4 {
+    font-size: 16px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .left-offer {
+    left: 63px;
+    top: 101px;
+    text-align: center;
+    width: 152px;
+  }
+
+  .right-offer {
+    right: 31px;
+    top: 102px;
+    text-align: center;
+    width: 152px;
+  }
+
+  .cta.promo {
+    bottom: 20px;
+    left: 422px;
+    font-weight: normal;
+  }
+}

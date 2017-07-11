@@ -15,9 +15,19 @@
 	 -webkit-font-smoothing: antialiased !important;
 }
 
+<<<<<<< Updated upstream:into-the-uncharted/scss/helper.scss
 .mobonly, .mobile {display: none!important;}
 .deskonly, .desk {display: block!important}
 @media only screen and (min-width: 0px) and (max-width : 767px) { 
 .mobonly, .mobile {display: block!important;}
 .deskonly, .desk {display: none!important}
 }
+=======
+.mobonly {display: none!important;}
+.deskonly {display: block!important}
+
+@media only screen and (min-width: 0px) and (max-width : 767px) { 
+	.mobonly {display: block!important;}
+	.deskonly {display: none!important}
+}
+>>>>>>> Stashed changes:scss/helper.scss
